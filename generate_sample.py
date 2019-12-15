@@ -18,7 +18,7 @@ MAIN_DIR = '/Users/suzukikenichi/pro-main/lab-lottery'
 EXCEL = os.path.join(MAIN_DIR, 'excel', 'lab_data2.xlsx')
 EXCEL2 = os.path.join(MAIN_DIR, 'excel', 'after_first.xlsx')
 
-LAB_NUM = 24
+LAB_NUM = 22
 
 def set_sample(num):
     candidates = []
