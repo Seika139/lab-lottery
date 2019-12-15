@@ -15,7 +15,7 @@ from Students import Student
 MAIN_DIR = os.path.abspath(os.path.dirname(__file__))
 EXCEL = os.path.join(MAIN_DIR, 'excel', 'lab_data2.xlsx')
 EXCEL2 = os.path.join(MAIN_DIR, 'excel', 'after_first.xlsx')
-
+EXCEL3 = os.path.join(MAIN_DIR, 'excel', 'haizoku2.xlsx')
 LAB_NUM = 22
 
 def set_sample(num):
@@ -29,6 +29,14 @@ def set_sample(num):
         s.destination_id = np.random.randint(LAB_NUM)
         candidates.append(s)
     return candidates
+candidates = set_sample(89)
+print(candidates[0])
+
+pd.read_excel(EXCEL)
+
+def set_sample2(num):
+    candidates = []
+    data = pd.read_excel(EXCEL3)
 
 
 def first_lottery(array):
