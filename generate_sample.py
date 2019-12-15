@@ -12,9 +12,7 @@ import pandas as pd
 from Students import Student
 
 
-# MAIN_DIR = os.path.abspath(os.path.dirname(__file__))
-# delete below
-MAIN_DIR = '/Users/suzukikenichi/pro-main/lab-lottery'
+MAIN_DIR = os.path.abspath(os.path.dirname(__file__))
 EXCEL = os.path.join(MAIN_DIR, 'excel', 'lab_data2.xlsx')
 EXCEL2 = os.path.join(MAIN_DIR, 'excel', 'after_first.xlsx')
 
