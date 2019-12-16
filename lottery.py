@@ -2,50 +2,49 @@
 # -*- coding: utf-8 -*-
 
 '''
-全体のくじの流れ
+くじの流れ
 '''
-
-# delete below
-import codecs
-import json
 
 import numpy as np
 import os
-import pandas as pd
 
-from Students import Student
+from StudentData import StudentData
+from Labdata import LabData
 
-# MAIN_DIR = os.path.abspath(os.path.dirname(__file__))
-# delete below
-MAIN_DIR = '/Users/suzukikenichi/pro-main/lab-lottery'
-EXCEL = os.path.join(MAIN_DIR, 'excel', 'lab_data.xlsx')
+def first_lottery():
 
-df = pd.read_excel(EXCEL)
+    ld = LabData()
+    ld.create_dic()
+    ld.load_dic()
 
-lab_num = 24
+    sd = StudentData()
+    sd.create_dic()
+    sd.load_dic()
 
-with codecs.open('test.json','w',encoding='utf-8') as f:
-        dump = json.dumps(dic,indent=2,ensure_ascii=False)
-        f.write(dump)
+    order = [key for key in sd.dic]
+    np.random.shuffle(order)
+    for id in order:
+        if sd.dic[id]['state'] == 99:
+            continue
 
-def set_sample(num):
-    candidates = []
-    for i in range(num):
-        s = Student()
-        s.destination = np.random.randint(0,lab_num)
-        s.name = 'student'+str(i)
-        candidates.append(s)
-    return candidates
+        dest_dic = ld.dic[str(sd.dic[id]['dest_id'])]
+        four_year = dest_dic['four_year']
+        six_year  = dest_dic['six_year']
+        both      = dest_dic['both']
 
-def first_lottery(candidates):
-    box2d = []
-    for _ in range(lab_num):
-        box2d.append([])
-    for student in candidates:
-        box2d[student.destination].append(student.name)
-    return box2d
+        if sd.dic[id]['is_six_course'] == 1:
+            if len(dest_dic['enrollee']) < six_year + both:
+                ld.add_student(sd.dic[id]['dest_id'],id)
+                sd.dic[id]['state'] = 2
+            else:
+                sd.dic[id]['state'] = 1
+        else:
+            if len(dest_dic['enrollee']) < four_year + both:
+                ld.add_student(sd.dic[id]['dest_id'],id)
+                sd.dic[id]['state'] = 2
+            else:
+                sd.dic[id]['state'] = 1
+    ld.save_dic()
+    sd.save_dic()
 
-npr = first_lottery(set_sample(80))
-
-df['candidates'] = npr
-df
+first_lottery()

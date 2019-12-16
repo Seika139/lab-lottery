@@ -1,0 +1,288 @@
+{
+  "0": {
+    "name": "天然物合成化学",
+    "common_name": "天合",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "47",
+      "57",
+      "0",
+      "37",
+      "89"
+    ]
+  },
+  "1": {
+    "name": "有機合成化学",
+    "common_name": "有機合成",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "2",
+      "23",
+      "28",
+      "25",
+      "17"
+    ]
+  },
+  "2": {
+    "name": "天然物化学",
+    "common_name": "天然",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "39"
+    ]
+  },
+  "3": {
+    "name": "基礎有機化学",
+    "common_name": "基礎有機",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "26",
+      "22",
+      "88",
+      "5",
+      "71"
+    ]
+  },
+  "4": {
+    "name": "薬品代謝化学",
+    "common_name": "代謝",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "41",
+      "79",
+      "60",
+      "30",
+      "82"
+    ]
+  },
+  "5": {
+    "name": "生体分析化学",
+    "common_name": "分析",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "74",
+      "42",
+      "75"
+    ]
+  },
+  "6": {
+    "name": "生命物理化学",
+    "common_name": "生命物理",
+    "min": 0,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": []
+  },
+  "7": {
+    "name": "蛋白構造化学",
+    "common_name": "構造",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": []
+  },
+  "8": {
+    "name": "衛生化学",
+    "common_name": "衛生",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "29",
+      "20",
+      "32"
+    ]
+  },
+  "9": {
+    "name": "生理化学",
+    "common_name": "生理",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "78",
+      "51",
+      "67",
+      "14",
+      "72"
+    ]
+  },
+  "10": {
+    "name": "分子生物学",
+    "common_name": "分生",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "70",
+      "55",
+      "81",
+      "9",
+      "40"
+    ]
+  },
+  "11": {
+    "name": "遺伝学",
+    "common_name": "遺伝",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "21",
+      "15",
+      "24",
+      "76",
+      "19"
+    ]
+  },
+  "12": {
+    "name": "細胞情報学",
+    "common_name": "細情",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "62",
+      "7",
+      "3",
+      "8"
+    ]
+  },
+  "13": {
+    "name": "蛋白質代謝学",
+    "common_name": "蛋白",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "18"
+    ]
+  },
+  "14": {
+    "name": "免疫・微生物学",
+    "common_name": "免疫",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "46",
+      "84",
+      "27"
+    ]
+  },
+  "15": {
+    "name": "分子薬物動態学",
+    "common_name": "動態",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "69",
+      "54",
+      "10",
+      "16",
+      "1"
+    ]
+  },
+  "16": {
+    "name": "薬品作用学",
+    "common_name": "薬作",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "83",
+      "43",
+      "48",
+      "53",
+      "45"
+    ]
+  },
+  "17": {
+    "name": "機能病態学",
+    "common_name": "病態",
+    "min": 2,
+    "four_year": 5,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": [
+      "80",
+      "65",
+      "66",
+      "64",
+      "6"
+    ]
+  },
+  "18": {
+    "name": "薬化学",
+    "common_name": "薬化",
+    "min": 0,
+    "four_year": 2,
+    "six_year": 1,
+    "both": 0,
+    "enrollee": []
+  },
+  "19": {
+    "name": "医薬品評価科学",
+    "common_name": "医薬品評価",
+    "min": 0,
+    "four_year": 1,
+    "six_year": 1,
+    "both": 1,
+    "enrollee": []
+  },
+  "20": {
+    "name": "育薬学",
+    "common_name": "育薬",
+    "min": 0,
+    "four_year": 1,
+    "six_year": 1,
+    "both": 1,
+    "enrollee": [
+      "87",
+      "11"
+    ]
+  },
+  "21": {
+    "name": "医学部附属病院薬剤部",
+    "common_name": "薬剤部",
+    "min": 0,
+    "four_year": 4,
+    "six_year": 1,
+    "both": 1,
+    "enrollee": [
+      "33",
+      "44",
+      "35"
+    ]
+  }
+}

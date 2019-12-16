@@ -42,7 +42,7 @@ def find_lack_lab(dic):
     lack_labs = []
     for key in dic:
         if dic[key]['min'] > len(dic[key]['students']):
-            lack_labs.append(key)
+            lack_labs.append([key,dic[key]['min']-len(dic[key]['students'])])
     return lack_labs
 
 
@@ -59,14 +59,14 @@ def second_lottery():
         else:
             dic[lab] = [id]
 
-    # print(dic)
+    print(dic)
 
     max_lab = 0
     min_lab = 100
     for key in dic:
         min_lab = min(min_lab,len(dic[key]))
         max_lab = max(max_lab,len(dic[key]))
-    # print(max_lab,min_lab)
+    print(max_lab,min_lab)
 
     if max_lab / min_lab > 2:
         all_lottery()
@@ -74,16 +74,30 @@ def second_lottery():
         # separate_lottery()
         pass
 
-    def all_lottery():
-
+def all_lottery(cand,lack_labs):
+    l = [i for i in range(1,90)]
+    np.random.shuffle(l)
+    print(l)
+    """
+    num_move = 0
+    for i in lack_labs:
+        num_move += i[1]
+    print(num_move)
+    np.random.shuffle(cand)
+    for students in cand:
         pass
+    """
+
+def lottery(cand):
+    np.random.shuffle(cand)
 
 
 def main():
     cand, dic = get_candidates_from_xlsx()
-    print(find_lack_lab(dic))
+    lack_labs = find_lack_lab(dic)
     second_lottery()
     print(len(cand))
+    print(all_lottery(0,0))
 
 
 if __name__ == "__main__":
