@@ -68,11 +68,41 @@ class LabData:
         self.delete_student(id)
         self.add_student(new_lab,id)
 
+    def get_lacking_labs(self):
+        """
+        不足枠の研究室を取得する
+        return -> 要素が [研究室のid,不足人数] からなる二重配列
+        """
+        lacking_labs = []
+        for key in self.dic:
+            n = self.dic[key]['min'] - len(self.dic[key]['enrollee'])
+            if n > 0:
+                lacking_labs.append([key,n])
+        return lacking_labs
 
+    def get_open_labs(self,is_six_course):
+        """
+        空き枠の研究室を取得する
+        return -> 空き枠のある研究室のidからなる配列
+        """
+        open_labs = []
+        for key in self.dic:
+            if is_six_course == 1:
+                n = self.dic[key]['six_year'] + self.dic[key]['both']
+                if len(self.dic[key]['enrollee']) < n:
+                    open_labs.append(key)
+            else:
+                n = self.dic[key]['four_year'] + self.dic[key]['both']
+                if len(self.dic[key]['enrollee']) < n:
+                    open_labs.append(key)
+        return open_labs
+
+# delete below
 if __name__ == "__main__":
     s = LabData()
     s.create_dic()
     # s.load_dic()
     # # s.add_student(0,2)
-    # s.move_student(0,12)
-    # s.save_dic()
+    for i in range(10):
+        s.move_student(i,i+1)
+    s.save_dic()

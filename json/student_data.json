@@ -6,7 +6,7 @@
     "dest_id": 0,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "0"
   },
   "1": {
     "student_num": 2,
@@ -15,7 +15,7 @@
     "dest_id": 15,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "15"
   },
   "2": {
     "student_num": 3,
@@ -23,7 +23,7 @@
     "destination": "有機合成化学",
     "dest_id": 1,
     "is_six_course": 1,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "3": {
@@ -33,7 +33,7 @@
     "dest_id": 12,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "12"
   },
   "4": {
     "student_num": 5,
@@ -41,8 +41,8 @@
     "destination": "基礎有機化学",
     "dest_id": 3,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "3"
   },
   "5": {
     "student_num": 6,
@@ -51,7 +51,7 @@
     "dest_id": 3,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "3"
   },
   "6": {
     "student_num": 7,
@@ -60,7 +60,7 @@
     "dest_id": 17,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "17"
   },
   "7": {
     "student_num": 8,
@@ -69,7 +69,7 @@
     "dest_id": 12,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "12"
   },
   "8": {
     "student_num": 9,
@@ -78,7 +78,7 @@
     "dest_id": 12,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "12"
   },
   "9": {
     "student_num": 10,
@@ -87,7 +87,7 @@
     "dest_id": 10,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "10"
   },
   "10": {
     "student_num": 11,
@@ -95,7 +95,7 @@
     "destination": "分子薬物動態学",
     "dest_id": 15,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "11": {
@@ -105,7 +105,7 @@
     "dest_id": 20,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "20"
   },
   "12": {
     "student_num": 13,
@@ -132,7 +132,7 @@
     "dest_id": 9,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "9"
   },
   "15": {
     "student_num": 16,
@@ -141,7 +141,7 @@
     "dest_id": 11,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "11"
   },
   "16": {
     "student_num": 17,
@@ -150,7 +150,7 @@
     "dest_id": 15,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "15"
   },
   "17": {
     "student_num": 18,
@@ -158,7 +158,7 @@
     "destination": "有機合成化学",
     "dest_id": 1,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "18": {
@@ -168,7 +168,7 @@
     "dest_id": 13,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "13"
   },
   "19": {
     "student_num": 20,
@@ -177,7 +177,7 @@
     "dest_id": 11,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "11"
   },
   "20": {
     "student_num": 21,
@@ -186,7 +186,7 @@
     "dest_id": 8,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "8"
   },
   "21": {
     "student_num": 22,
@@ -195,7 +195,7 @@
     "dest_id": 11,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "11"
   },
   "22": {
     "student_num": 23,
@@ -203,7 +203,7 @@
     "destination": "基礎有機化学",
     "dest_id": 3,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "23": {
@@ -213,7 +213,7 @@
     "dest_id": 1,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "1"
   },
   "24": {
     "student_num": 25,
@@ -222,7 +222,7 @@
     "dest_id": 11,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "11"
   },
   "25": {
     "student_num": 26,
@@ -231,7 +231,7 @@
     "dest_id": 1,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "1"
   },
   "26": {
     "student_num": 27,
@@ -240,7 +240,7 @@
     "dest_id": 3,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "3"
   },
   "27": {
     "student_num": 28,
@@ -249,7 +249,7 @@
     "dest_id": 14,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "14"
   },
   "28": {
     "student_num": 29,
@@ -258,7 +258,7 @@
     "dest_id": 1,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "1"
   },
   "29": {
     "student_num": 30,
@@ -267,7 +267,7 @@
     "dest_id": 8,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "8"
   },
   "30": {
     "student_num": 31,
@@ -276,7 +276,7 @@
     "dest_id": 4,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "4"
   },
   "31": {
     "student_num": 32,
@@ -294,7 +294,7 @@
     "dest_id": 8,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "8"
   },
   "33": {
     "student_num": 34,
@@ -303,7 +303,7 @@
     "dest_id": 21,
     "is_six_course": 1,
     "state": 2,
-    "final_id": 0
+    "final_id": "21"
   },
   "34": {
     "student_num": 35,
@@ -311,8 +311,8 @@
     "destination": "薬品代謝学",
     "dest_id": 4,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "4"
   },
   "35": {
     "student_num": 36,
@@ -321,7 +321,7 @@
     "dest_id": 21,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "21"
   },
   "36": {
     "student_num": 37,
@@ -329,8 +329,8 @@
     "destination": "分子薬物動態学",
     "dest_id": 15,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "15"
   },
   "37": {
     "student_num": 38,
@@ -339,7 +339,7 @@
     "dest_id": 0,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "0"
   },
   "38": {
     "student_num": 39,
@@ -347,8 +347,8 @@
     "destination": "生理化学",
     "dest_id": 9,
     "is_six_course": 1,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "9"
   },
   "39": {
     "student_num": 40,
@@ -357,7 +357,7 @@
     "dest_id": 2,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "2"
   },
   "40": {
     "student_num": 41,
@@ -366,7 +366,7 @@
     "dest_id": 10,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "10"
   },
   "41": {
     "student_num": 42,
@@ -374,7 +374,7 @@
     "destination": "薬品代謝学",
     "dest_id": 4,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "42": {
@@ -384,7 +384,7 @@
     "dest_id": 5,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "5"
   },
   "43": {
     "student_num": 44,
@@ -392,7 +392,7 @@
     "destination": "薬品作用学",
     "dest_id": 16,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "44": {
@@ -402,7 +402,7 @@
     "dest_id": 21,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "21"
   },
   "45": {
     "student_num": 46,
@@ -411,7 +411,7 @@
     "dest_id": 16,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "16"
   },
   "46": {
     "student_num": 47,
@@ -420,7 +420,7 @@
     "dest_id": 14,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "14"
   },
   "47": {
     "student_num": 48,
@@ -429,7 +429,7 @@
     "dest_id": 0,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "0"
   },
   "48": {
     "student_num": 49,
@@ -438,7 +438,7 @@
     "dest_id": 16,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "16"
   },
   "49": {
     "student_num": 50,
@@ -446,8 +446,8 @@
     "destination": "有機合成化学",
     "dest_id": 1,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "1"
   },
   "50": {
     "student_num": 51,
@@ -465,7 +465,7 @@
     "dest_id": 9,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "9"
   },
   "52": {
     "student_num": 53,
@@ -473,8 +473,8 @@
     "destination": "機能病態学",
     "dest_id": 17,
     "is_six_course": 1,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "17"
   },
   "53": {
     "student_num": 54,
@@ -483,7 +483,7 @@
     "dest_id": 16,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "16"
   },
   "54": {
     "student_num": 55,
@@ -492,7 +492,7 @@
     "dest_id": 15,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "15"
   },
   "55": {
     "student_num": 56,
@@ -501,7 +501,7 @@
     "dest_id": 10,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "10"
   },
   "56": {
     "student_num": 57,
@@ -509,8 +509,8 @@
     "destination": "機能病態学",
     "dest_id": 17,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "17"
   },
   "57": {
     "student_num": 58,
@@ -519,7 +519,7 @@
     "dest_id": 0,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "0"
   },
   "58": {
     "student_num": 59,
@@ -527,8 +527,8 @@
     "destination": "分子生物学",
     "dest_id": 10,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "10"
   },
   "59": {
     "student_num": 60,
@@ -546,7 +546,7 @@
     "dest_id": 4,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "4"
   },
   "61": {
     "student_num": 62,
@@ -554,8 +554,8 @@
     "destination": "有機合成化学",
     "dest_id": 1,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "1"
   },
   "62": {
     "student_num": 63,
@@ -564,7 +564,7 @@
     "dest_id": 12,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "12"
   },
   "63": {
     "student_num": 64,
@@ -581,7 +581,7 @@
     "destination": "機能病態学",
     "dest_id": 17,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "65": {
@@ -590,7 +590,7 @@
     "destination": "機能病態学",
     "dest_id": 17,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "66": {
@@ -600,7 +600,7 @@
     "dest_id": 17,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "17"
   },
   "67": {
     "student_num": 68,
@@ -608,7 +608,7 @@
     "destination": "生理化学",
     "dest_id": 9,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "68": {
@@ -627,7 +627,7 @@
     "dest_id": 15,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "15"
   },
   "70": {
     "student_num": 71,
@@ -635,7 +635,7 @@
     "destination": "分子生物学",
     "dest_id": 10,
     "is_six_course": 0,
-    "state": 2,
+    "state": 1,
     "final_id": 0
   },
   "71": {
@@ -645,7 +645,7 @@
     "dest_id": 3,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "3"
   },
   "72": {
     "student_num": 73,
@@ -654,7 +654,7 @@
     "dest_id": 9,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "9"
   },
   "73": {
     "student_num": 74,
@@ -662,8 +662,8 @@
     "destination": "薬品作用学",
     "dest_id": 16,
     "is_six_course": 0,
-    "state": 1,
-    "final_id": 0
+    "state": 2,
+    "final_id": "16"
   },
   "74": {
     "student_num": 75,
@@ -672,7 +672,7 @@
     "dest_id": 5,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "5"
   },
   "75": {
     "student_num": 76,
@@ -681,7 +681,7 @@
     "dest_id": 5,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "5"
   },
   "76": {
     "student_num": 77,
@@ -690,7 +690,7 @@
     "dest_id": 11,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "11"
   },
   "77": {
     "student_num": 78,
@@ -708,7 +708,7 @@
     "dest_id": 9,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "9"
   },
   "79": {
     "student_num": 80,
@@ -717,7 +717,7 @@
     "dest_id": 4,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "4"
   },
   "80": {
     "student_num": 81,
@@ -726,7 +726,7 @@
     "dest_id": 17,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "17"
   },
   "81": {
     "student_num": 82,
@@ -735,7 +735,7 @@
     "dest_id": 10,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "10"
   },
   "82": {
     "student_num": 83,
@@ -744,7 +744,7 @@
     "dest_id": 4,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "4"
   },
   "83": {
     "student_num": 84,
@@ -753,7 +753,7 @@
     "dest_id": 16,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "16"
   },
   "84": {
     "student_num": 85,
@@ -762,7 +762,7 @@
     "dest_id": 14,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "14"
   },
   "85": {
     "student_num": 86,
@@ -789,7 +789,7 @@
     "dest_id": 20,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "20"
   },
   "88": {
     "student_num": 89,
@@ -798,7 +798,7 @@
     "dest_id": 3,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "3"
   },
   "89": {
     "student_num": 90,
@@ -807,6 +807,6 @@
     "dest_id": 0,
     "is_six_course": 0,
     "state": 2,
-    "final_id": 0
+    "final_id": "0"
   }
 }

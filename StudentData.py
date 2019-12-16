@@ -54,6 +54,10 @@ class StudentData:
                 self.dic[str(r)][c] =  value
         self.save_dic()
 
+    def get_vagabonds(self):
+        vagabonds = [k for k,v in self.dic.items() if v['state']==1]
+        return vagabonds
+
 if __name__ == "__main__":
     s = StudentData()
     s.create_dic()
