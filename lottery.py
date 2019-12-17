@@ -97,7 +97,10 @@ def move_vagabond(rest_vagabonds,id):
     print('\n10{}番 : {}さん'.format(int(id)+1,SD.dic[id]['name']))
 
     if lacking_number < rest_vagabonds:
-        print('あなたは空き枠か不足枠に移動してください')
+        if lacking_number == 0:
+            print('あなたは空き枠に移動してください')
+        else:
+            print('あなたは空き枠か不足枠に移動してください')
         choice = LD.get_open_labs(SD.dic[id]['is_six_course'])
     else:
         print('あなたは不足枠に移動してください')
@@ -106,8 +109,7 @@ def move_vagabond(rest_vagabonds,id):
     ct = True
     while ct:
         print('以下の研究室の中から選んでください\n')
-        for c in choice:
-            print('{} -> 「{}」と入力'.format(LD.dic[c]['name'],c))
+        print(' '.join(['{} -> {}'.format(c,LD.dic[c]['name']) for c in choice]))
         n = input('>> ')
         if n in choice:
             if self_movement(n,id):
@@ -136,7 +138,7 @@ def vagabond_lottery():
 
     while vagabonds:
         id = vagabonds.pop(0)
-        move_vagabond(len(vagabonds),id)
+        move_vagabond(len(vagabonds)+1,id)
     print('浪人の振り分けが終わりました。')
 
 def check_lack_labs():
