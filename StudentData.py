@@ -16,11 +16,11 @@ import pandas as pd
 class StudentData:
 
     states = {
-        0 : '志望者',
-        1 : '浪人',
-        2 : '仮内定',
-        3 : '本内定',
-        9 : '志望しない'
+        '0' : '志望者',
+        '1' : '浪人',
+        '2' : '仮内定',
+        '3' : '本内定',
+        '99' : '志望しない'
     }
 
     MAIN_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -50,13 +50,23 @@ class StudentData:
             for c in columns:
                 value = df.loc[r,c]
                 if isinstance(value,np.integer):
-                    value = int(value)
+                    value = str(int(value))
                 self.dic[str(r)][c] =  value
         self.save_dic()
 
     def get_vagabonds(self):
-        vagabonds = [k for k,v in self.dic.items() if v['state']==1]
+        vagabonds = [k for k,v in self.dic.items() if v['state']=='1']
         return vagabonds
+
+    def get_provisionals(self):
+        provisionals = [k for k,v in self.dic.items() if v['state']=='2']
+        return provisionals
+
+    def finalize(self):
+        for key in self.dic:
+            if self.dic[key]['state'] == '2':
+                self.dic[key]['state'] = '3'
+        self.save_dic()
 
 if __name__ == "__main__":
     s = StudentData()

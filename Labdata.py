@@ -75,19 +75,25 @@ class LabData:
         """
         lacking_labs = []
         for key in self.dic:
-            n = self.dic[key]['min'] - len(self.dic[key]['enrollee'])
+            n = self.get_lacking_num_by_id(key)
             if n > 0:
                 lacking_labs.append([key,n])
         return lacking_labs
 
+    def get_lacking_num_by_id(self,id):
+        """
+        idの研究室の不足人数を返す
+        """
+        return  self.dic[id]['min'] - len(self.dic[id]['enrollee'])
+
     def get_open_labs(self,is_six_course):
         """
-        空き枠の研究室を取得する
+        志望者が6年制かどうかに応じて空き枠の研究室を取得する
         return -> 空き枠のある研究室のidからなる配列
         """
         open_labs = []
         for key in self.dic:
-            if is_six_course == 1:
+            if is_six_course == '1':
                 n = self.dic[key]['six_year'] + self.dic[key]['both']
                 if len(self.dic[key]['enrollee']) < n:
                     open_labs.append(key)
@@ -97,12 +103,13 @@ class LabData:
                     open_labs.append(key)
         return open_labs
 
-# delete below
-if __name__ == "__main__":
-    s = LabData()
-    s.create_dic()
-    # s.load_dic()
-    # # s.add_student(0,2)
-    for i in range(10):
-        s.move_student(i,i+1)
-    s.save_dic()
+    def can_move(self,id):
+        """
+        idの生徒が他の研究室に移動できる状態かを確認する
+        """
+        id = self.int_to_str(id)
+        lab_id = [d[0] for d in self.dic.items() if id in d[1]['enrollee']][0]
+        if len(self.dic[lab_id]['enrollee']) > self.dic[lab_id]['min']:
+            return True
+        else:
+            return False    
