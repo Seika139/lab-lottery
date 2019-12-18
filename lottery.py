@@ -5,6 +5,7 @@
 くじ全体の流れ
 '''
 
+import csv
 import numpy as np
 import os
 import sys
@@ -43,6 +44,7 @@ def move_student(lab,id):
         SD.dic[id]['final_id'] = lab
         return True
     else:
+        SD.dic[id]['state'] = '1'
         return False
 
 def first_lottery():
@@ -57,6 +59,20 @@ def first_lottery():
         move_student(str(SD.dic[id]['dest_id']),id)
     save_data()
 
+def rearrange_and_save():
+    """
+    enrolleeのfourやsixの枠が空いたときにbothの枠から人を移動する
+    """
+    for lab in LD.dic:
+        students = []
+        if len(LD.dic[lab]['enrollee'][2]) > 0:
+            for i in range(len(LD.dic[lab]['enrollee'])):
+                students.extend(LD.dic[lab]['enrollee'][i])
+            for id in students:
+                LD.delete_student(id)
+                LD.add_student(lab,id,SD.dic[id]['is_six_course']=='1')
+            save_data()
+
 def self_movement(lab,id):
     """
     自己申告で研究室に移れる
@@ -64,7 +80,7 @@ def self_movement(lab,id):
     """
     load_data()
     tf = move_student(lab,id)
-    save_data()
+    rearrange_and_save()
     return tf
 
 def move_vagabond(rest_vagabonds,id):
@@ -102,7 +118,7 @@ def move_vagabond(rest_vagabonds,id):
                 print('{}には入れません'.format(LD.dic[n]['name']))
         else:
             print('選択肢の中にある研究室を入力してください')
-    save_data()
+    rearrange_and_save()
 
 def vagabond_lottery():
     """
@@ -113,6 +129,7 @@ def vagabond_lottery():
     vagabonds = SD.get_vagabonds()
     np.random.shuffle(vagabonds)
     print(vagabonds)
+    print(len(vagabonds))
 
     if lacking_number <= len(vagabonds):
         print('\n浪人の人数が不足枠の数以上あります\n')
@@ -142,7 +159,7 @@ def check_lack_labs():
         print()
         return lack_labs
 
-def vistims_to_one_lab(provisionals,lab,n):
+def victims_to_one_lab(provisionals,lab,n):
     np.random.shuffle(provisionals)
     lab_name = LD.dic[lab]['name']
     while n > 0:
@@ -162,7 +179,7 @@ def victims_to_several_labs(lack_labs):
             break
         else:
             print()
-    dic = edit_form('form_raw.txt')
+    dic = csv_to_dic('questionnaire.csv')
     max_lab = 0
     min_lab = 100
     for key in dic:
@@ -178,25 +195,22 @@ def victims_to_several_labs(lack_labs):
     else:
         print('希望の研究室の差は2倍以内です。研究室ごとに抽選を行います')
         for key in dic:
-            print('\n' + LD.dic[key]['nane']+'の抽選を行います')
+            print('\n' + LD.dic[key]['name']+'の抽選を行います')
             victims_to_one_lab(dic[key],key,LD.get_lacking_num_by_id(key))
 
-def edit_form(file):
+def csv_to_dic(file):
     """
-    ファイルの形式が
-    lab_id \t student_id
-    になっているtxtファイルを辞書にまとめる
+    csvを辞書にまとめる
     """
-    dic = {}
     with open(file,'r') as f:
-        form = f.readlines()
-    for l in form:
-        lab, id = l.split('\t')
-        id = int(id.split('\n')[0])
-        if lab in dic:
-            dic[lab].append(id)
+        reader = csv.reader(f)
+        reader = [i for i in reader]
+    dic = {}
+    for line in reader:
+        if line[0] in dic:
+            dic[line[0]].append(line[1])
         else:
-            dic[lab] = [id]
+            dic[line[0]] = [line[1]]
     return dic
 
 def main():

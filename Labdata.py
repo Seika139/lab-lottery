@@ -128,11 +128,12 @@ class LabData:
         研究室labに生徒が入れるかをis_sixに応じてboolで返す
         return -> bool
         """
-        capacity = self.dic[lab]['six_year'] + self.dic[lab]['both']
         if is_six:
+            capacity = self.dic[lab]['six_year'] + self.dic[lab]['both']
             buried = sum([len(l) for l in self.dic[lab]['enrollee'][1:]])
         else:
-            buried = len(self.dic[lab]['enrollee']][0]) + len(self.dic[lab]['enrollee']][2])
+            capacity = self.dic[lab]['four_year'] + self.dic[lab]['both']
+            buried = len(self.dic[lab]['enrollee'][0]) + len(self.dic[lab]['enrollee'][2])
         return capacity > buried
 
     def get_open_labs(self,is_six):
