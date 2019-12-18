@@ -44,7 +44,7 @@ class LabData:
                 if isinstance(value,np.integer):
                     value = int(value)
                 self.dic[str(r)][c] =  value
-            self.dic[str(r)]['enrollee'] = []
+            self.dic[str(r)]['enrollee'] =  [[],[],[]]
         self.save_dic()
 
     def int_to_str(self,n):
@@ -53,20 +53,56 @@ class LabData:
         else:
             return n
 
-    def add_student(self,lab,id):
+    def get_capacities(self,lab):
+        """
+        four_year, six_year, both にそれぞれ空きがあるかをbool値で示す
+        return -> [bool,bool,bool]
+        """
+        capacities = []
+        for i in range(3):
+            capacities.append(len(self.dic[lab]['enrollee'][i]) < self.dic[lab][['four_year', 'six_year', 'both'][i]])
+        return capacities
+
+    def add_student(self,lab,id,is_six):
+        """
+        idの生徒をlabに配属する
+        return -> True なら配属成功
+        """
         lab = self.int_to_str(lab)
         id = self.int_to_str(id)
-        self.dic[lab]['enrollee'].append(id)
+        capacities = self.get_capacities(lab)
+        if is_six and capacities[1]:
+            self.dic[lab]['enrollee'][1].append(id)
+            return True
+        elif not is_six and capacities[0]:
+            self.dic[lab]['enrollee'][0].append(id)
+            return True
+        elif capacities[2]:
+            self.dic[lab]['enrollee'][2].append(id)
+            return True
+        else:
+            return False
 
     def delete_student(self,id):
+        """
+        idの生徒をdicから削除する
+        """
         id = self.int_to_str(id)
-        keys = [d[0] for d in self.dic.items() if id in d[1]['enrollee']]
+        keys = [d[0] for d in self.dic.items() if search_elem(id,d[1]['enrollee'])]
         for key in keys:
-            self.dic[key]['enrollee'] = [i for i in self.dic[key]['enrollee'] if i != id]
+            self.dic[key]['enrollee'] = [[i for i in l if i != id] for l in self.dic[key]['enrollee']]
 
-    def move_student(self,new_lab,id):
-        self.delete_student(id)
-        self.add_student(new_lab,id)
+    def move_student(self,new_lab,id,is_six):
+        """
+        idの生徒をlabに移動
+        return -> True なら移動成功
+        """
+        if self.able_to_receive(new_lab,is_six):
+            self.delete_student(id)
+            tf = self.add_student(new_lab,id,is_six)
+            return tf
+        else:
+            return False
 
     def get_lacking_labs(self):
         """
@@ -80,36 +116,46 @@ class LabData:
                 lacking_labs.append([key,n])
         return lacking_labs
 
-    def get_lacking_num_by_id(self,id):
+    def get_lacking_num_by_id(self,lab):
         """
-        idの研究室の不足人数を返す
+        labの研究室の不足人数を返す
+        不足していない場合は0を返す
         """
-        return  self.dic[id]['min'] - len(self.dic[id]['enrollee'])
+        return  max(self.dic[lab]['min'] - sum([len(l) for l in self.dic[lab]['enrollee']]), 0)
 
-    def get_open_labs(self,is_six_course):
+    def able_to_receive(self,lab,is_six):
+        """
+        研究室labに生徒が入れるかをis_sixに応じてboolで返す
+        return -> bool
+        """
+        capacity = self.dic[lab]['six_year'] + self.dic[lab]['both']
+        if is_six:
+            buried = sum([len(l) for l in self.dic[lab]['enrollee'][1:]])
+        else:
+            buried = len(self.dic[lab]['enrollee']][0]) + len(self.dic[lab]['enrollee']][2])
+        return capacity > buried
+
+    def get_open_labs(self,is_six):
         """
         志望者が6年制かどうかに応じて空き枠の研究室を取得する
         return -> 空き枠のある研究室のidからなる配列
         """
-        open_labs = []
-        for key in self.dic:
-            if is_six_course == '1':
-                n = self.dic[key]['six_year'] + self.dic[key]['both']
-                if len(self.dic[key]['enrollee']) < n:
-                    open_labs.append(key)
-            else:
-                n = self.dic[key]['four_year'] + self.dic[key]['both']
-                if len(self.dic[key]['enrollee']) < n:
-                    open_labs.append(key)
+        open_labs = [lab for lab in self.dic if self.able_to_receive(lab,is_six)]
         return open_labs
 
-    def can_move(self,id):
+    def can_exit(self,id):
         """
         idの生徒が他の研究室に移動できる状態かを確認する
         """
         id = self.int_to_str(id)
-        lab_id = [d[0] for d in self.dic.items() if id in d[1]['enrollee']][0]
-        if len(self.dic[lab_id]['enrollee']) > self.dic[lab_id]['min']:
+        lab_id = [d[0] for d in self.dic.items() if search_elem(id,d[1]['enrollee'])][0]
+        if sum([len(l) for l in self.dic[lab_id]['enrollee']]) > self.dic[lab_id]['min']:
             return True
         else:
-            return False    
+            return False
+
+def search_elem(i,box):
+    for line in box:
+        if i in line:
+            return True
+    return False

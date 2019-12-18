@@ -38,34 +38,17 @@ def move_student(lab,id):
     if SD.dic[id]['state'] == '99':
         return False
 
-    dest_dic = LD.dic[lab]
-    four_year = dest_dic['four_year']
-    six_year  = dest_dic['six_year']
-    both      = dest_dic['both']
-
-    if SD.dic[id]['is_six_course'] == '1':
-        if len(dest_dic['enrollee']) < six_year + both:
-            LD.move_student(lab,id)
-            SD.dic[id]['state'] = '2'
-            SD.dic[id]['final_id'] = lab
-            return True
-        else:
-            SD.dic[id]['state'] = '1'
-            return False
+    if LD.move_student(lab,id,SD.dic[id]['is_six_course']=='1'):
+        SD.dic[id]['state'] = '2'
+        SD.dic[id]['final_id'] = lab
+        return True
     else:
-        if len(dest_dic['enrollee']) < four_year + both:
-            LD.move_student(lab,id)
-            SD.dic[id]['state'] = '2'
-            SD.dic[id]['final_id'] = lab
-            return True
-        else:
-            SD.dic[id]['state'] = '1'
-            return False
+        return False
 
 def first_lottery():
     """
     最初に行うくじ
-    ランダムに選ばれたidの順にadd_student()を行う
+    ランダムに選ばれたidの順にmove_student()を行う
     """
     load_data()
     order = [key for key in SD.dic]
@@ -101,7 +84,7 @@ def move_vagabond(rest_vagabonds,id):
             print('あなたは空き枠に移動してください')
         else:
             print('あなたは空き枠か不足枠に移動してください')
-        choice = LD.get_open_labs(SD.dic[id]['is_six_course'])
+        choice = LD.get_open_labs(SD.dic[id]['is_six_course']=='1')
     else:
         print('あなたは不足枠に移動してください')
         choice = [i[0] for i in lack_labs]
@@ -163,12 +146,12 @@ def vistims_to_one_lab(provisionals,lab,n):
     np.random.shuffle(provisionals)
     lab_name = LD.dic[lab]['name']
     while n > 0:
-        if LD.can_move():
+        if LD.can_exit(provisionals[0]):
             self_movement(lab,provisionals[0])
             print('{} さんは {} に移動です'.format(SD.dic[provisionals[0]['name']],lab_name))
             n -= 1
         del provisionals[0]
-    print('\n以上で{}の配属を終わります'.format(lab_name))
+    print('\n以上で{}への配属を終わります'.format(lab_name))
     SD.finalize()
 
 def victims_to_several_labs(lack_labs):
