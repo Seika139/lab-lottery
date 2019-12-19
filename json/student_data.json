@@ -6,7 +6,7 @@
     "dest_id": "0",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "19"
   },
   "1": {
     "student_num": "2",
@@ -15,7 +15,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "15"
   },
   "2": {
     "student_num": "3",
@@ -42,7 +42,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "21"
   },
   "5": {
     "student_num": "6",
@@ -114,7 +114,7 @@
     "dest_id": "9",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "0"
+    "final_id": "14"
   },
   "13": {
     "student_num": "14",
@@ -213,7 +213,7 @@
     "dest_id": "1",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "7"
+    "final_id": "2"
   },
   "24": {
     "student_num": "25",
@@ -240,7 +240,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "21"
   },
   "27": {
     "student_num": "28",
@@ -312,7 +312,7 @@
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "4"
   },
   "35": {
     "student_num": "36",
@@ -348,7 +348,7 @@
     "dest_id": "9",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "9"
+    "final_id": "0"
   },
   "39": {
     "student_num": "40",
@@ -393,7 +393,7 @@
     "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "7"
   },
   "44": {
     "student_num": "45",
@@ -429,7 +429,7 @@
     "dest_id": "0",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "6"
+    "final_id": "0"
   },
   "48": {
     "student_num": "49",
@@ -483,7 +483,7 @@
     "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "13"
+    "final_id": "16"
   },
   "54": {
     "student_num": "55",
@@ -492,7 +492,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "13"
   },
   "55": {
     "student_num": "56",
@@ -591,7 +591,7 @@
     "dest_id": "17",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "2"
   },
   "66": {
     "student_num": "67",
@@ -600,7 +600,7 @@
     "dest_id": "17",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "17"
   },
   "67": {
     "student_num": "68",
@@ -618,7 +618,7 @@
     "dest_id": "9",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "2"
+    "final_id": "9"
   },
   "69": {
     "student_num": "70",
@@ -636,7 +636,7 @@
     "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "10"
+    "final_id": "2"
   },
   "71": {
     "student_num": "72",
@@ -645,7 +645,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "3"
   },
   "72": {
     "student_num": "73",
@@ -663,7 +663,7 @@
     "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "16"
+    "final_id": "7"
   },
   "74": {
     "student_num": "75",
@@ -717,7 +717,7 @@
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "4"
+    "final_id": "19"
   },
   "80": {
     "student_num": "81",
@@ -735,7 +735,7 @@
     "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "7"
+    "final_id": "10"
   },
   "82": {
     "student_num": "83",

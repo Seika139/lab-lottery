@@ -15,7 +15,7 @@ SD = StudentData()
 LD = LabData()
 
 
-item_top = '<div class="item"><table><tr><th>学籍番号</th><th>名前</th><th>志望状況</th></tr>'
+item_top = '<div class="item"><table><tr><th>番号</th><th>名前</th><th>志望状況</th></tr>'
 item_bottom = '</table></div>'
 def set_item_middle(id,name,state):
     return '<tr><td class="id">{}</td><td class="name">{}</td><td class="state">{}</td></tr>'.format(id,name,state)
