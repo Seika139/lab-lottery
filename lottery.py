@@ -12,6 +12,7 @@ import sys
 
 from StudentData import StudentData
 from Labdata import LabData
+from generate_html import generate_html
 
 
 LD = LabData()
@@ -20,6 +21,7 @@ SD = StudentData()
 def create_data():
     LD.create_dic()
     SD.create_dic()
+    generate_html()
     load_data()
 
 def load_data():
@@ -29,6 +31,7 @@ def load_data():
 def save_data():
     LD.save_dic()
     SD.save_dic()
+    generate_html()
 
 def move_student(lab,id):
     """
@@ -36,7 +39,7 @@ def move_student(lab,id):
     元々他の研究室にいた場合、そこの仮内定は取り消される。
     return -> bool : 仮内定ができたらTrue
     """
-    if SD.dic[id]['state'] == '99':
+    if SD.dic[id]['state'] in ['7','8','9']:
         return False
 
     if LD.move_student(lab,id,SD.dic[id]['is_six_course']=='1'):
@@ -141,6 +144,32 @@ def vagabond_lottery():
         move_vagabond(len(vagabonds)+1,id)
     print('浪人の振り分けが終わりました。')
 
+def absentees_to_lack_lab():
+    """
+    当日欠席者をランダムに不足枠に振り分ける。
+    不足枠より欠席者が多い場合はランダムな空き枠に移動する
+    (空き枠がある場合は不足枠が埋まるので全体くじの必要がない)
+    """
+    absentees = [id for id in SD.dic if SD.dic[id]['state'] == '7']
+    np.random.shuffle(absentees)
+    lack_labs = []
+    for l in LD.get_lacking_labs():
+        lack_labs.extend([l[0]]*l[1])
+    np.random.shuffle(lack_labs)
+    while absentees:
+        id = absentees.pop(0)
+        if lack_labs:
+            lab = lack_labs.pop(0)
+            if LD.move_student(lab,id,SD.dic[id]['is_six_course']=='1'):
+                SD.dic[id]['state'] = '2'
+                SD.dic[id]['final_id'] = lab
+        else:
+            lab = np.random.shuffle(LD.get_open_labs(SD.dic[id]['is_six_course']=='1'))[0]
+            if LD.move_student(lab,id,SD.dic[id]['is_six_course']=='1'):
+                SD.dic[id]['state'] = '2'
+                SD.dic[id]['final_id'] = lab
+    save_data()
+
 def check_lack_labs():
     lack_labs = LD.get_lacking_labs()
 
@@ -222,6 +251,7 @@ def main():
         vistims_to_one_lab(SD.get_provisionals(),lack_labs[0],lack_labs[1])
     elif len(lack_labs) > 1:
         victims_to_several_labs(lack_labs)
+    save_data()
     print('以上で配属プログラムを終了します')
 
 if __name__ == '__main__':

@@ -16,11 +16,13 @@ import pandas as pd
 class StudentData:
 
     states = {
-        '0' : '志望者',
+        '0' : '未配属',
         '1' : '浪人',
         '2' : '仮内定',
         '3' : '本内定',
-        '99' : '志望しない'
+        '7' : '無断欠席',
+        '8' : '志望しない',
+        '9' : '在籍していない',
     }
 
     MAIN_DIR = os.path.abspath(os.path.dirname(__file__))

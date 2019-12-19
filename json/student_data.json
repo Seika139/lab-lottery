@@ -15,7 +15,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "2"
   },
   "2": {
     "student_num": "3",
@@ -42,7 +42,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "3"
   },
   "5": {
     "student_num": "6",
@@ -213,7 +213,7 @@
     "dest_id": "1",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "7"
   },
   "24": {
     "student_num": "25",
@@ -231,7 +231,7 @@
     "dest_id": "1",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "6"
+    "final_id": "1"
   },
   "26": {
     "student_num": "27",
@@ -240,7 +240,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "2"
   },
   "27": {
     "student_num": "28",
@@ -282,10 +282,10 @@
     "student_num": "32",
     "name": "顧 豪",
     "destination": "なし",
-    "dest_id": "99",
+    "dest_id": "9",
     "is_six_course": "0",
-    "state": "99",
-    "final_id": "99"
+    "state": "9",
+    "final_id": "9"
   },
   "32": {
     "student_num": "33",
@@ -312,7 +312,7 @@
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "4"
+    "final_id": "2"
   },
   "35": {
     "student_num": "36",
@@ -348,7 +348,7 @@
     "dest_id": "9",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "7"
+    "final_id": "9"
   },
   "39": {
     "student_num": "40",
@@ -375,7 +375,7 @@
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "4"
   },
   "42": {
     "student_num": "43",
@@ -393,7 +393,7 @@
     "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "16"
+    "final_id": "5"
   },
   "44": {
     "student_num": "45",
@@ -429,7 +429,7 @@
     "dest_id": "0",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "6"
   },
   "48": {
     "student_num": "49",
@@ -483,7 +483,7 @@
     "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "13"
   },
   "54": {
     "student_num": "55",
@@ -519,7 +519,7 @@
     "dest_id": "0",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "0"
   },
   "58": {
     "student_num": "59",
@@ -528,7 +528,7 @@
     "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "10"
   },
   "59": {
     "student_num": "60",
@@ -570,10 +570,10 @@
     "student_num": "64",
     "name": "原田花音",
     "destination": "なし",
-    "dest_id": "99",
+    "dest_id": "8",
     "is_six_course": "0",
-    "state": "99",
-    "final_id": "99"
+    "state": "8",
+    "final_id": "8"
   },
   "64": {
     "student_num": "65",
@@ -600,7 +600,7 @@
     "dest_id": "17",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "13"
+    "final_id": "2"
   },
   "67": {
     "student_num": "68",
@@ -618,7 +618,7 @@
     "dest_id": "9",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "9"
+    "final_id": "2"
   },
   "69": {
     "student_num": "70",
@@ -627,7 +627,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "15"
   },
   "70": {
     "student_num": "71",
@@ -645,7 +645,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "5"
   },
   "72": {
     "student_num": "73",
@@ -663,7 +663,7 @@
     "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "6"
+    "final_id": "16"
   },
   "74": {
     "student_num": "75",
@@ -696,10 +696,10 @@
     "student_num": "78",
     "name": "なし",
     "destination": "なし",
-    "dest_id": "99",
+    "dest_id": "9",
     "is_six_course": "0",
-    "state": "99",
-    "final_id": "99"
+    "state": "9",
+    "final_id": "9"
   },
   "78": {
     "student_num": "79",
@@ -735,7 +735,7 @@
     "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "10"
+    "final_id": "7"
   },
   "82": {
     "student_num": "83",
@@ -771,7 +771,7 @@
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "7"
+    "final_id": "3"
   },
   "86": {
     "student_num": "87",
