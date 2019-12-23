@@ -68,7 +68,6 @@ def rearrange_and_save():
     """
     enrolleeのfourやsixの枠が空いたときにbothの枠から人を移動する
     """
-    save_data()
     for lab in LD.dic:
         students = []
         if len(LD.dic[lab]['enrollee'][2]) > 0:
@@ -116,15 +115,14 @@ def move_vagabond(rest_vagabonds,id):
         else:
             print('エラーで移動できません')
     else:
-        ct = True
-        while ct:
+        while True:
             print('以下の研究室の中から選んでください\n')
             print(' '.join(['{} -> {}'.format(c,LD.dic[c]['name']) for c in choice]))
             n = input('>> ')
             if n in choice:
                 if self_movement(n,id):
                     print('{}に仮内定しました'.format(LD.dic[n]['name']))
-                    ct = False
+                    break
                 else:
                     print('エラーで移動できません')
             else:
@@ -138,9 +136,11 @@ def vagabond_lottery():
     lack_labs = LD.get_lacking_labs()
     lacking_number = sum([i[1] for i in lack_labs])
     vagabonds = SD.get_vagabonds()
+
+    if not vagabonds:
+        return None
+
     np.random.shuffle(vagabonds)
-    print(vagabonds)
-    print(len(vagabonds))
 
     if lacking_number <= len(vagabonds):
         print('浪人の人数が不足枠の数以上あります')
@@ -159,6 +159,8 @@ def absentees_to_lack_lab():
     (空き枠がある場合は不足枠が埋まるので全体くじの必要がない)
     """
     absentees = [id for id in SD.dic if SD.dic[id]['state'] == '7']
+    if not absentees:
+        return None
     np.random.shuffle(absentees)
     lack_labs = []
     for l in LD.get_lacking_labs():
@@ -176,6 +178,7 @@ def absentees_to_lack_lab():
             if LD.move_student(lab,id,SD.dic[id]['is_six_course']=='1'):
                 SD.dic[id]['state'] = '2'
                 SD.dic[id]['final_id'] = lab
+    print('欠席者を不足枠にランダムに配置しました')
     save_data()
 
 def check_lack_labs():
@@ -266,11 +269,45 @@ def csv_to_dic(file):
             dic[line[0]] = [line[1]]
     return dic
 
+def free_movement():
+    """
+    first_lotteryの後に自由に動いて良い時間
+    """
+    while True:
+        vagabonds = SD.get_vagabonds()
+        if not vagabonds:
+            print('浪人がいないので浪人の移動を終わります')
+            break
+        print('\n現在の浪人は以下の{}人です'.format(len(vagabonds)))
+        print('\n'.join(['{} : {}'.format(id,SD.dic[id]['name']) for id in vagabonds]))
+        print('\n今なら浪人の人は自由に空き枠・不足枠に移動することができます。')
+        print('id の人間が移動する場合は「id」を入力してください')
+        id = input('移動のフェーズを終了するなら「qqq」と入力してください。\n>> ')
+        if id == 'qqq':
+            break
+        elif id in vagabonds:
+            print('\n{}さんが現在移動できる研究室は以下の通りです'.format(SD.dic[id]['name']))
+            choice = LD.get_open_labs(SD.dic[id]['is_six_course']=='1')
+            print(' '.join(['{} -> {}'.format(c,LD.dic[c]['name']) for c in choice]))
+            print('やっぱり移動しない場合は「q」と入力してください')
+            lab = input('>> ')
+            if lab in choice:
+                if self_movement(lab,id):
+                    print('{}に仮内定しました'.format(LD.dic[lab]['name']))
+                else:
+                    print('エラーで移動できません')
+            else:
+                print('{}さんは浪人のままです。'.format(SD.dic[id]['name']))
+            rearrange_and_save()
+        else:
+            print('不正な入力です')
+
 def main():
     create_data()
     first_lottery()
-    # 希望して移動するポイントを設ける
+    free_movement()
     vagabond_lottery()
+    absentees_to_lack_lab()
     lack_labs = check_lack_labs()
     if len(lack_labs) == 1:
         victims_to_one_lab(SD.get_provisionals(),lack_labs[0][0],lack_labs[0][1])

@@ -155,7 +155,6 @@ class LabData:
         if not lab_id:
             print('{}の生徒がLDに見当たりません'.format(id))
             return False
-        
         lab_id = lab_id[0]
         if sum([len(l) for l in self.dic[lab_id]['enrollee']]) > self.dic[lab_id]['min']:
             return True
