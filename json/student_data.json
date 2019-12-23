@@ -6,115 +6,115 @@
     "dest_id": "0",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "19"
+    "final_id": "0"
   },
   "1": {
     "student_num": "2",
     "name": "東一織",
     "destination": "分子薬物動態学",
-    "dest_id": "15",
+    "dest_id": "1",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "1"
   },
   "2": {
     "student_num": "3",
     "name": "渥美渉",
     "destination": "有機合成化学",
-    "dest_id": "1",
+    "dest_id": "2",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "1"
+    "final_id": "2"
   },
   "3": {
     "student_num": "4",
     "name": "新井陵友",
     "destination": "細胞情報学",
-    "dest_id": "12",
+    "dest_id": "2",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "12"
+    "final_id": "2"
   },
   "4": {
     "student_num": "5",
     "name": "有田実季",
     "destination": "基礎有機化学",
-    "dest_id": "3",
+    "dest_id": "2",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "21"
+    "final_id": "2"
   },
   "5": {
     "student_num": "6",
     "name": "飯田虎之介",
     "destination": "基礎有機化学",
-    "dest_id": "3",
+    "dest_id": "2",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "2"
   },
   "6": {
     "student_num": "7",
     "name": "池田哲生",
     "destination": "機能病態学",
-    "dest_id": "17",
+    "dest_id": "2",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "2"
   },
   "7": {
     "student_num": "8",
     "name": "池村美咲",
     "destination": "細胞情報学",
-    "dest_id": "12",
+    "dest_id": "2",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "12"
+    "final_id": "2"
   },
   "8": {
     "student_num": "9",
     "name": "石井雅也",
     "destination": "細胞情報学",
-    "dest_id": "12",
+    "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "12"
+    "final_id": "3"
   },
   "9": {
     "student_num": "10",
     "name": "石原杏",
     "destination": "分子生物学",
-    "dest_id": "10",
+    "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "10"
+    "final_id": "3"
   },
   "10": {
     "student_num": "11",
     "name": "今村愛",
     "destination": "分子薬物動態学",
-    "dest_id": "15",
+    "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "3"
   },
   "11": {
     "student_num": "12",
     "name": "居森裕也",
     "destination": "育薬学",
-    "dest_id": "20",
+    "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "20"
+    "final_id": "3"
   },
   "12": {
     "student_num": "13",
     "name": "植木裕子",
     "destination": "生理化学",
-    "dest_id": "9",
+    "dest_id": "3",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "14"
+    "final_id": "3"
   },
   "13": {
     "student_num": "14",
@@ -129,160 +129,160 @@
     "student_num": "15",
     "name": "内田啓人",
     "destination": "生理化学",
-    "dest_id": "9",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "9"
-  },
-  "15": {
-    "student_num": "16",
-    "name": "榎いずみ",
-    "destination": "遺伝学",
-    "dest_id": "11",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "11"
-  },
-  "16": {
-    "student_num": "17",
-    "name": "遠藤建",
-    "destination": "分子薬物動態学",
-    "dest_id": "15",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "15"
-  },
-  "17": {
-    "student_num": "18",
-    "name": "及川和輝",
-    "destination": "有機合成化学",
-    "dest_id": "1",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "1"
-  },
-  "18": {
-    "student_num": "19",
-    "name": "大西浩文",
-    "destination": "蛋白質代謝学",
-    "dest_id": "13",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "13"
-  },
-  "19": {
-    "student_num": "20",
-    "name": "大沼太郎",
-    "destination": "遺伝学",
-    "dest_id": "11",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "11"
-  },
-  "20": {
-    "student_num": "21",
-    "name": "大場美智子",
-    "destination": "衛生化学",
-    "dest_id": "8",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "8"
-  },
-  "21": {
-    "student_num": "22",
-    "name": "岡部七子",
-    "destination": "遺伝学",
-    "dest_id": "11",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "11"
-  },
-  "22": {
-    "student_num": "23",
-    "name": "岡山桃果",
-    "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
     "state": "3",
     "final_id": "3"
   },
-  "23": {
-    "student_num": "24",
-    "name": "笠井翔太",
-    "destination": "有機合成化学",
-    "dest_id": "1",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "2"
-  },
-  "24": {
-    "student_num": "25",
-    "name": "梶原陽太郎",
+  "15": {
+    "student_num": "16",
+    "name": "榎いずみ",
     "destination": "遺伝学",
-    "dest_id": "11",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "11"
-  },
-  "25": {
-    "student_num": "26",
-    "name": "片山友里",
-    "destination": "有機合成化学",
-    "dest_id": "1",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "1"
-  },
-  "26": {
-    "student_num": "27",
-    "name": "金元俊輔",
-    "destination": "基礎有機化学",
-    "dest_id": "3",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "21"
-  },
-  "27": {
-    "student_num": "28",
-    "name": "神谷奈央子",
-    "destination": "免疫微生物学",
-    "dest_id": "14",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "14"
-  },
-  "28": {
-    "student_num": "29",
-    "name": "川畑恵一",
-    "destination": "有機合成化学",
-    "dest_id": "1",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "1"
-  },
-  "29": {
-    "student_num": "30",
-    "name": "川邉明広",
-    "destination": "衛生化学",
-    "dest_id": "8",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "8"
-  },
-  "30": {
-    "student_num": "31",
-    "name": "北澤慎一",
-    "destination": "薬品代謝学",
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
     "final_id": "4"
   },
+  "16": {
+    "student_num": "17",
+    "name": "遠藤建",
+    "destination": "分子薬物動態学",
+    "dest_id": "4",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "4"
+  },
+  "17": {
+    "student_num": "18",
+    "name": "及川和輝",
+    "destination": "有機合成化学",
+    "dest_id": "4",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "4"
+  },
+  "18": {
+    "student_num": "19",
+    "name": "大西浩文",
+    "destination": "蛋白質代謝学",
+    "dest_id": "4",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "4"
+  },
+  "19": {
+    "student_num": "20",
+    "name": "大沼太郎",
+    "destination": "遺伝学",
+    "dest_id": "4",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "4"
+  },
+  "20": {
+    "student_num": "21",
+    "name": "大場美智子",
+    "destination": "衛生化学",
+    "dest_id": "5",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "5"
+  },
+  "21": {
+    "student_num": "22",
+    "name": "岡部七子",
+    "destination": "遺伝学",
+    "dest_id": "5",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "5"
+  },
+  "22": {
+    "student_num": "23",
+    "name": "岡山桃果",
+    "destination": "基礎有機化学",
+    "dest_id": "5",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "5"
+  },
+  "23": {
+    "student_num": "24",
+    "name": "笠井翔太",
+    "destination": "有機合成化学",
+    "dest_id": "5",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "5"
+  },
+  "24": {
+    "student_num": "25",
+    "name": "梶原陽太郎",
+    "destination": "遺伝学",
+    "dest_id": "5",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "17"
+  },
+  "25": {
+    "student_num": "26",
+    "name": "片山友里",
+    "destination": "有機合成化学",
+    "dest_id": "5",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "5"
+  },
+  "26": {
+    "student_num": "27",
+    "name": "金元俊輔",
+    "destination": "基礎有機化学",
+    "dest_id": "6",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "6"
+  },
+  "27": {
+    "student_num": "28",
+    "name": "神谷奈央子",
+    "destination": "免疫微生物学",
+    "dest_id": "6",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "6"
+  },
+  "28": {
+    "student_num": "29",
+    "name": "川畑恵一",
+    "destination": "有機合成化学",
+    "dest_id": "6",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "6"
+  },
+  "29": {
+    "student_num": "30",
+    "name": "川邉明広",
+    "destination": "衛生化学",
+    "dest_id": "6",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "6"
+  },
+  "30": {
+    "student_num": "31",
+    "name": "北澤慎一",
+    "destination": "薬品代謝学",
+    "dest_id": "6",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "6"
+  },
   "31": {
     "student_num": "32",
     "name": "顧 豪",
     "destination": "なし",
-    "dest_id": "9",
+    "dest_id": "0",
     "is_six_course": "0",
     "state": "9",
     "final_id": "9"
@@ -291,142 +291,142 @@
     "student_num": "33",
     "name": "小林薫平",
     "destination": "衛生化学",
-    "dest_id": "8",
+    "dest_id": "7",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "8"
+    "final_id": "7"
   },
   "33": {
     "student_num": "34",
     "name": "小林瑞樹",
     "destination": "薬剤部",
-    "dest_id": "21",
+    "dest_id": "7",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "21"
+    "final_id": "7"
   },
   "34": {
     "student_num": "35",
     "name": "駒沢歩弥",
     "destination": "薬品代謝学",
-    "dest_id": "4",
+    "dest_id": "7",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "4"
+    "final_id": "7"
   },
   "35": {
     "student_num": "36",
     "name": "佐伯英",
     "destination": "薬剤部",
-    "dest_id": "21",
+    "dest_id": "7",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "21"
+    "final_id": "7"
   },
   "36": {
     "student_num": "37",
     "name": "佐藤佑",
     "destination": "分子薬物動態学",
-    "dest_id": "15",
+    "dest_id": "7",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "7"
   },
   "37": {
     "student_num": "38",
     "name": "重松航",
     "destination": "天然物合成化学",
-    "dest_id": "0",
+    "dest_id": "7",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "7"
   },
   "38": {
     "student_num": "39",
     "name": "島田紗也華",
     "destination": "生理化学",
-    "dest_id": "9",
+    "dest_id": "8",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "0"
+    "final_id": "8"
   },
   "39": {
     "student_num": "40",
     "name": "志茂将太朗",
     "destination": "天然物化学",
-    "dest_id": "2",
+    "dest_id": "8",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "8"
   },
   "40": {
     "student_num": "41",
     "name": "蒋晨星",
     "destination": "分子生物学",
-    "dest_id": "10",
+    "dest_id": "8",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "10"
+    "final_id": "8"
   },
   "41": {
     "student_num": "42",
     "name": "白井孝平",
     "destination": "薬品代謝学",
-    "dest_id": "4",
+    "dest_id": "8",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "4"
+    "final_id": "8"
   },
   "42": {
     "student_num": "43",
     "name": "鈴木健一",
     "destination": "生体分析化学",
-    "dest_id": "5",
+    "dest_id": "8",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "8"
   },
   "43": {
     "student_num": "44",
     "name": "須藤成俊",
     "destination": "薬品作用学",
-    "dest_id": "16",
+    "dest_id": "8",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "7"
+    "final_id": "8"
   },
   "44": {
     "student_num": "45",
     "name": "セガール詩文",
     "destination": "薬剤部",
-    "dest_id": "21",
+    "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "21"
+    "final_id": "9"
   },
   "45": {
     "student_num": "46",
     "name": "妹尾賢治",
     "destination": "薬品作用学",
-    "dest_id": "16",
+    "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "16"
+    "final_id": "9"
   },
   "46": {
     "student_num": "47",
     "name": "千菊智也",
     "destination": "免疫微生物学",
-    "dest_id": "14",
+    "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "14"
+    "final_id": "9"
   },
   "47": {
     "student_num": "48",
     "name": "高岡恭兵",
     "destination": "天然物合成化学",
-    "dest_id": "0",
+    "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
     "final_id": "0"
@@ -435,64 +435,64 @@
     "student_num": "49",
     "name": "瀧口龍之介",
     "destination": "薬品作用学",
-    "dest_id": "16",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "16"
-  },
-  "49": {
-    "student_num": "50",
-    "name": "タクショウネイ",
-    "destination": "有機合成化学",
-    "dest_id": "1",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "1"
-  },
-  "50": {
-    "student_num": "51",
-    "name": "田口淳一",
-    "destination": "天然物合成化学",
-    "dest_id": "0",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "0"
-  },
-  "51": {
-    "student_num": "52",
-    "name": "工風清",
-    "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
     "final_id": "9"
   },
+  "49": {
+    "student_num": "50",
+    "name": "タクショウネイ",
+    "destination": "有機合成化学",
+    "dest_id": "9",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "9"
+  },
+  "50": {
+    "student_num": "51",
+    "name": "田口淳一",
+    "destination": "天然物合成化学",
+    "dest_id": "10",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "10"
+  },
+  "51": {
+    "student_num": "52",
+    "name": "工風清",
+    "destination": "生理化学",
+    "dest_id": "10",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "10"
+  },
   "52": {
     "student_num": "53",
     "name": "蓼沼豊",
     "destination": "機能病態学",
-    "dest_id": "17",
+    "dest_id": "10",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "17"
+    "final_id": "10"
   },
   "53": {
     "student_num": "54",
     "name": "田中志和",
     "destination": "薬品作用学",
-    "dest_id": "16",
+    "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "16"
+    "final_id": "10"
   },
   "54": {
     "student_num": "55",
     "name": "田村隆太郎",
     "destination": "分子薬物動態学",
-    "dest_id": "15",
+    "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "13"
+    "final_id": "10"
   },
   "55": {
     "student_num": "56",
@@ -507,55 +507,55 @@
     "student_num": "57",
     "name": "富澤郁美",
     "destination": "機能病態学",
-    "dest_id": "17",
+    "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "11"
   },
   "57": {
     "student_num": "58",
     "name": "中田遥友",
     "destination": "天然物合成化学",
-    "dest_id": "0",
+    "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "11"
   },
   "58": {
     "student_num": "59",
     "name": "中村優斗",
     "destination": "分子生物学",
-    "dest_id": "10",
+    "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "10"
+    "final_id": "11"
   },
   "59": {
     "student_num": "60",
     "name": "西浦佑香",
     "destination": "薬剤部",
-    "dest_id": "21",
+    "dest_id": "11",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "21"
+    "final_id": "11"
   },
   "60": {
     "student_num": "61",
     "name": "野本歩夢",
     "destination": "薬品代謝学",
-    "dest_id": "4",
+    "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "4"
+    "final_id": "11"
   },
   "61": {
     "student_num": "62",
     "name": "幅崎美涼",
     "destination": "有機合成化学",
-    "dest_id": "1",
+    "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "11"
   },
   "62": {
     "student_num": "63",
@@ -570,7 +570,7 @@
     "student_num": "64",
     "name": "原田花音",
     "destination": "なし",
-    "dest_id": "8",
+    "dest_id": "12",
     "is_six_course": "0",
     "state": "8",
     "final_id": "8"
@@ -579,124 +579,124 @@
     "student_num": "65",
     "name": "原田知季",
     "destination": "機能病態学",
-    "dest_id": "17",
+    "dest_id": "12",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "12"
   },
   "65": {
     "student_num": "66",
     "name": "日高瞳",
     "destination": "機能病態学",
-    "dest_id": "17",
+    "dest_id": "12",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "12"
   },
   "66": {
     "student_num": "67",
     "name": "平山皓太",
     "destination": "機能病態学",
-    "dest_id": "17",
+    "dest_id": "12",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "12"
   },
   "67": {
     "student_num": "68",
     "name": "広田将恭",
     "destination": "生理化学",
-    "dest_id": "9",
+    "dest_id": "12",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "9"
+    "final_id": "12"
   },
   "68": {
     "student_num": "69",
     "name": "深作明日香",
     "destination": "生理化学",
-    "dest_id": "9",
+    "dest_id": "13",
     "is_six_course": "1",
     "state": "3",
-    "final_id": "9"
+    "final_id": "13"
   },
   "69": {
     "student_num": "70",
     "name": "藤原穫",
     "destination": "分子薬物動態学",
-    "dest_id": "15",
+    "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "13"
   },
   "70": {
     "student_num": "71",
     "name": "増田裕樹",
     "destination": "分子生物学",
-    "dest_id": "10",
+    "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "2"
+    "final_id": "13"
   },
   "71": {
     "student_num": "72",
     "name": "松本周子",
     "destination": "基礎有機化学",
-    "dest_id": "3",
+    "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "13"
   },
   "72": {
     "student_num": "73",
     "name": "馬渕陽",
     "destination": "生理化学",
-    "dest_id": "9",
+    "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "9"
+    "final_id": "1"
   },
   "73": {
     "student_num": "74",
     "name": "三上弘記",
     "destination": "薬品作用学",
-    "dest_id": "16",
+    "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "7"
+    "final_id": "13"
   },
   "74": {
     "student_num": "75",
     "name": "宗俊吾",
     "destination": "生体分析化学",
-    "dest_id": "5",
+    "dest_id": "14",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "14"
   },
   "75": {
     "student_num": "76",
     "name": "村上拓",
     "destination": "生体分析化学",
-    "dest_id": "5",
+    "dest_id": "14",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "14"
   },
   "76": {
     "student_num": "77",
     "name": "村本雅哉",
     "destination": "遺伝学",
-    "dest_id": "11",
+    "dest_id": "14",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "11"
+    "final_id": "14"
   },
   "77": {
     "student_num": "78",
     "name": "なし",
     "destination": "なし",
-    "dest_id": "9",
+    "dest_id": "14",
     "is_six_course": "0",
     "state": "9",
     "final_id": "9"
@@ -705,73 +705,73 @@
     "student_num": "79",
     "name": "柳沼舜",
     "destination": "生理化学",
-    "dest_id": "9",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "9"
-  },
-  "79": {
-    "student_num": "80",
-    "name": "山崎隼",
-    "destination": "薬品代謝学",
-    "dest_id": "4",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "19"
-  },
-  "80": {
-    "student_num": "81",
-    "name": "山本啓喜",
-    "destination": "機能病態学",
-    "dest_id": "17",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "17"
-  },
-  "81": {
-    "student_num": "82",
-    "name": "湯淺隼",
-    "destination": "分子生物学",
-    "dest_id": "10",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "10"
-  },
-  "82": {
-    "student_num": "83",
-    "name": "吉田圭吾",
-    "destination": "薬品代謝学",
-    "dest_id": "4",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "4"
-  },
-  "83": {
-    "student_num": "84",
-    "name": "李彩維",
-    "destination": "薬品作用学",
-    "dest_id": "16",
-    "is_six_course": "0",
-    "state": "3",
-    "final_id": "16"
-  },
-  "84": {
-    "student_num": "85",
-    "name": "劉哲男",
-    "destination": "免疫微生物学",
     "dest_id": "14",
     "is_six_course": "0",
     "state": "3",
     "final_id": "14"
   },
+  "79": {
+    "student_num": "80",
+    "name": "山崎隼",
+    "destination": "薬品代謝学",
+    "dest_id": "15",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "15"
+  },
+  "80": {
+    "student_num": "81",
+    "name": "山本啓喜",
+    "destination": "機能病態学",
+    "dest_id": "15",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "15"
+  },
+  "81": {
+    "student_num": "82",
+    "name": "湯淺隼",
+    "destination": "分子生物学",
+    "dest_id": "15",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "17"
+  },
+  "82": {
+    "student_num": "83",
+    "name": "吉田圭吾",
+    "destination": "薬品代謝学",
+    "dest_id": "15",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "15"
+  },
+  "83": {
+    "student_num": "84",
+    "name": "李彩維",
+    "destination": "薬品作用学",
+    "dest_id": "15",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "15"
+  },
+  "84": {
+    "student_num": "85",
+    "name": "劉哲男",
+    "destination": "免疫微生物学",
+    "dest_id": "15",
+    "is_six_course": "0",
+    "state": "3",
+    "final_id": "15"
+  },
   "85": {
     "student_num": "86",
     "name": "鹿一璞",
     "destination": "基礎有機化学",
-    "dest_id": "3",
+    "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "16"
   },
   "86": {
     "student_num": "87",
@@ -786,27 +786,27 @@
     "student_num": "88",
     "name": "萩原郁哉",
     "destination": "育薬学",
-    "dest_id": "20",
+    "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "20"
+    "final_id": "16"
   },
   "88": {
     "student_num": "89",
     "name": "徳良",
     "destination": "基礎有機化学",
-    "dest_id": "3",
+    "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "3"
+    "final_id": "16"
   },
   "89": {
     "student_num": "90",
     "name": "樋川",
     "destination": "有機合成化学",
-    "dest_id": "0",
+    "dest_id": "16",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "16"
   }
 }

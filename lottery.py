@@ -5,7 +5,9 @@
 くじ全体の流れ
 '''
 
+import codecs
 import csv
+import json
 import numpy as np
 import os
 import sys
@@ -66,6 +68,7 @@ def rearrange_and_save():
     """
     enrolleeのfourやsixの枠が空いたときにbothの枠から人を移動する
     """
+    save_data()
     for lab in LD.dic:
         students = []
         if len(LD.dic[lab]['enrollee'][2]) > 0:
@@ -194,13 +197,13 @@ def victims_to_one_lab(provisionals,lab,n):
     while n > 0:
         if LD.can_exit(provisionals[0]):
             self_movement(lab,provisionals[0])
-            print('{} さんは {} に移動です'.format(SD.dic[provisionals[0]['name']],lab_name))
+            print('{} さんは {} に移動です'.format(SD.dic[provisionals[0]]['name'],lab_name))
             n -= 1
         del provisionals[0]
     print('\n以上で{}への配属を終わります'.format(lab_name))
     SD.finalize()
 
-def victims_to_several_labs(lack_labs):
+def victims_to_several_labs():
     print('不足研究室が複数あるため、アンケートを行います')
     while True:
         n = input('アンケートの取得が完了したら 123 を入力してください\n>> ')
@@ -208,12 +211,28 @@ def victims_to_several_labs(lack_labs):
             break
         else:
             print()
-    dic = csv_to_dic('questionnaire.csv')
+    que_dic = csv_to_dic('questionnaire.csv')
+    answered_student = []
+    for lab in que_dic:
+        answered_student.extend(que_dic[lab])
+    print("answered_student",answered_student)
+    lack_labs = LD.get_lacking_labs()
+    for id in SD.dic:
+        if not id in answered_student:
+            lab_id = np.random.shuffle([i[0] for i in lack_labs])
+            print(lab_id)
+            if lab_id in que_dic:
+                que_dic[lab_id].append(id)
+            else:
+                que_dic[lab_id] = [id]
+    with codecs.open('json/res_of_questionnaire.json','w',encoding='utf-8') as f:
+        dump = json.dumps(que_dic,indent=2,ensure_ascii=False)
+        f.write(dump)
     max_lab = 0
     min_lab = 100
-    for key in dic:
-        min_lab = min(min_lab,len(dic[key]))
-        max_lab = max(max_lab,len(dic[key]))
+    for key in que_dic:
+        min_lab = min(min_lab,len(que_dic[key]))
+        max_lab = max(max_lab,len(que_dic[key]))
     if max_lab / min_lab > 2:
         print('希望の研究室に2倍以上の差があります。全体で統合して抽選を行います')
         provisionals = SD.get_provisionals()
@@ -221,11 +240,12 @@ def victims_to_several_labs(lack_labs):
         for i in range(sum([i[1] for i in lack_labs])):
             move_vagabond(0,provisionals[0])
             del provisionals[0]
+        SD.finalize()
     else:
         print('希望の研究室の差は2倍以内です。研究室ごとに抽選を行います')
-        for key in dic:
+        for key in que_dic:
             print('\n' + LD.dic[key]['name']+'の抽選を行います')
-            victims_to_one_lab(dic[key],key,LD.get_lacking_num_by_id(key))
+            victims_to_one_lab(que_dic[key],key,LD.get_lacking_num_by_id(key))
 
 def csv_to_dic(file):
     """
@@ -245,12 +265,13 @@ def csv_to_dic(file):
 def main():
     create_data()
     first_lottery()
+    # 希望して移動するポイントを設ける
     vagabond_lottery()
     lack_labs = check_lack_labs()
     if len(lack_labs) == 1:
-        vistims_to_one_lab(SD.get_provisionals(),lack_labs[0],lack_labs[1])
+        victims_to_one_lab(SD.get_provisionals(),lack_labs[0][0],lack_labs[0][1])
     elif len(lack_labs) > 1:
-        victims_to_several_labs(lack_labs)
+        victims_to_several_labs()
     save_data()
     print('以上で配属プログラムを終了します')
 
