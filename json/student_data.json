@@ -3,19 +3,19 @@
     "student_num": "1",
     "name": "浅井響",
     "destination": "天然物合成化学",
-    "dest_id": "0",
+    "dest_id": "19",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "19"
   },
   "1": {
     "student_num": "2",
     "name": "東一織",
     "destination": "分子薬物動態学",
-    "dest_id": "1",
+    "dest_id": "19",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "19"
   },
   "2": {
     "student_num": "3",
@@ -213,7 +213,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "0"
   },
   "24": {
     "student_num": "25",
@@ -222,7 +222,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "1"
   },
   "25": {
     "student_num": "26",
@@ -429,7 +429,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "9"
   },
   "48": {
     "student_num": "49",
@@ -438,7 +438,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "9"
+    "final_id": "0"
   },
   "49": {
     "student_num": "50",
@@ -447,7 +447,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "9"
+    "final_id": "1"
   },
   "50": {
     "student_num": "51",
@@ -528,7 +528,7 @@
     "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "11"
+    "final_id": "17"
   },
   "59": {
     "student_num": "60",
@@ -654,7 +654,7 @@
     "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "13"
   },
   "73": {
     "student_num": "74",
@@ -717,7 +717,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "17"
   },
   "80": {
     "student_num": "81",
@@ -735,7 +735,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "15"
   },
   "82": {
     "student_num": "83",
@@ -793,7 +793,7 @@
   },
   "88": {
     "student_num": "89",
-    "name": "徳良",
+    "name": "徳良真",
     "destination": "基礎有機化学",
     "dest_id": "16",
     "is_six_course": "0",
@@ -802,7 +802,7 @@
   },
   "89": {
     "student_num": "90",
-    "name": "樋川",
+    "name": "樋川直人",
     "destination": "有機合成化学",
     "dest_id": "16",
     "is_six_course": "0",

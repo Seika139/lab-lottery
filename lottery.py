@@ -111,19 +111,25 @@ def move_vagabond(rest_vagabonds,id):
         print('あなたは不足枠に移動してください')
         choice = [i[0] for i in lack_labs]
 
-    ct = True
-    while ct:
-        print('以下の研究室の中から選んでください\n')
-        print(' '.join(['{} -> {}'.format(c,LD.dic[c]['name']) for c in choice]))
-        n = input('>> ')
-        if n in choice:
-            if self_movement(n,id):
-                print('{}に仮内定しました'.format(LD.dic[n]['name']))
-                ct = False
-            else:
-                print('{}には入れません'.format(LD.dic[n]['name']))
+    if len(choice) == 1:
+        if self_movement(choice[0],id):
+            print('移動すべき研究室は{}のみです。{}に移動しました。'.fromat(choice[0]))
         else:
-            print('選択肢の中にある研究室を入力してください')
+            print('エラーで移動できません')
+    else:
+        ct = True
+        while ct:
+            print('以下の研究室の中から選んでください\n')
+            print(' '.join(['{} -> {}'.format(c,LD.dic[c]['name']) for c in choice]))
+            n = input('>> ')
+            if n in choice:
+                if self_movement(n,id):
+                    print('{}に仮内定しました'.format(LD.dic[n]['name']))
+                    ct = False
+                else:
+                    print('エラーで移動できません')
+            else:
+                print('選択肢の中にある研究室を入力してください')
     rearrange_and_save()
 
 def vagabond_lottery():
@@ -209,18 +215,14 @@ def victims_to_several_labs():
         n = input('アンケートの取得が完了したら 123 を入力してください\n>> ')
         if n == '123':
             break
-        else:
-            print()
     que_dic = csv_to_dic('questionnaire.csv')
     answered_student = []
     for lab in que_dic:
         answered_student.extend(que_dic[lab])
-    print("answered_student",answered_student)
-    lack_labs = LD.get_lacking_labs()
+    lack_labs = [i[0] for i in LD.get_lacking_labs()]
     for id in SD.dic:
         if not id in answered_student:
-            lab_id = np.random.shuffle([i[0] for i in lack_labs])
-            print(lab_id)
+            lab_id = lack_labs[np.random.randint(len(lack_labs))]
             if lab_id in que_dic:
                 que_dic[lab_id].append(id)
             else:
@@ -237,7 +239,7 @@ def victims_to_several_labs():
         print('希望の研究室に2倍以上の差があります。全体で統合して抽選を行います')
         provisionals = SD.get_provisionals()
         np.random.shuffle(provisionals)
-        for i in range(sum([i[1] for i in lack_labs])):
+        for i in range(sum([i[1] for i in LD.get_lacking_labs()])):
             move_vagabond(0,provisionals[0])
             del provisionals[0]
         SD.finalize()
