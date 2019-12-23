@@ -41,9 +41,9 @@ def generate_html():
                     if SD.dic[id]['state'] in ['0','1','7','8']:
                         state = SD.states[SD.dic[id]['state']]
                     elif SD.dic[id]['state'] == '2':
-                        state = LD.dic[SD.dic[id]['dest_id']]['name'] + ' (仮)'
+                        state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (仮)'
                     elif SD.dic[id]['state'] == '3':
-                        state = LD.dic[SD.dic[id]['dest_id']]['name'] + ' (本)'
+                        state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (本)'
                     else:
                         n += 1
                         continue

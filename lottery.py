@@ -84,7 +84,6 @@ def self_movement(lab,id):
     自己申告で研究室に移れる
     return -> bool : 仮内定ができたらTrue
     """
-    load_data()
     tf = move_student(lab,id)
     rearrange_and_save()
     return tf
