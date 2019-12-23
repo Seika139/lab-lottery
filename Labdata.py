@@ -149,7 +149,14 @@ class LabData:
         idの生徒が他の研究室に移動できる状態かを確認する
         """
         id = self.int_to_str(id)
-        lab_id = [d[0] for d in self.dic.items() if search_elem(id,d[1]['enrollee'])][0]
+        lab_id = [d[0] for d in self.dic.items() if search_elem(id,d[1]['enrollee'])]
+
+        # たまに enrolleeに引っかからないことがあるので場合分けした
+        if not lab_id:
+            print('{}の生徒がLDに見当たりません'.format(id))
+            return False
+        
+        lab_id = lab_id[0]
         if sum([len(l) for l in self.dic[lab_id]['enrollee']]) > self.dic[lab_id]['min']:
             return True
         else:

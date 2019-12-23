@@ -113,7 +113,7 @@ def move_vagabond(rest_vagabonds,id):
 
     if len(choice) == 1:
         if self_movement(choice[0],id):
-            print('移動すべき研究室は{}のみです。{}に移動しました。'.fromat(choice[0]))
+            print('移動すべき研究室は{}のみなので自動的に移動しました。'.format(LD.dic[choice[0]]['name']))
         else:
             print('エラーで移動できません')
     else:
@@ -144,9 +144,9 @@ def vagabond_lottery():
     print(len(vagabonds))
 
     if lacking_number <= len(vagabonds):
-        print('\n浪人の人数が不足枠の数以上あります\n')
+        print('浪人の人数が不足枠の数以上あります')
     else:
-        print('\n浪人の数より不足枠の数が多いです\n')
+        print('浪人の数より不足枠の数が多いです')
 
     while vagabonds:
         id = vagabonds.pop(0)
@@ -198,6 +198,9 @@ def check_lack_labs():
         return lack_labs
 
 def victims_to_one_lab(provisionals,lab,n):
+    """
+    provisionals の中から n人 を 研究室 lab に配属させる
+    """
     np.random.shuffle(provisionals)
     lab_name = LD.dic[lab]['name']
     while n > 0:
@@ -221,7 +224,7 @@ def victims_to_several_labs():
         answered_student.extend(que_dic[lab])
     lack_labs = [i[0] for i in LD.get_lacking_labs()]
     for id in SD.dic:
-        if not id in answered_student:
+        if (not id in answered_student) and (not SD.dic[id]['state'] in ['8','9']):
             lab_id = lack_labs[np.random.randint(len(lack_labs))]
             if lab_id in que_dic:
                 que_dic[lab_id].append(id)

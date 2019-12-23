@@ -141,7 +141,7 @@
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "4"
+    "final_id": "0"
   },
   "16": {
     "student_num": "17",
@@ -195,7 +195,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "17"
   },
   "22": {
     "student_num": "23",
@@ -213,7 +213,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "5"
   },
   "24": {
     "student_num": "25",
@@ -222,7 +222,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "5"
   },
   "25": {
     "student_num": "26",
@@ -231,7 +231,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "0"
   },
   "26": {
     "student_num": "27",
@@ -438,7 +438,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "1"
   },
   "49": {
     "student_num": "50",
@@ -447,7 +447,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "9"
   },
   "50": {
     "student_num": "51",
@@ -483,7 +483,7 @@
     "dest_id": "10",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "10"
+    "final_id": "17"
   },
   "54": {
     "student_num": "55",
@@ -528,7 +528,7 @@
     "dest_id": "11",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "11"
   },
   "59": {
     "student_num": "60",
@@ -717,7 +717,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "1"
   },
   "80": {
     "student_num": "81",
