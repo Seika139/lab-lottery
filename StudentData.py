@@ -70,7 +70,3 @@ class StudentData:
             if self.dic[key]['state'] == '2':
                 self.dic[key]['state'] = '3'
         self.save_dic()
-
-if __name__ == "__main__":
-    s = StudentData()
-    s.create_dic()

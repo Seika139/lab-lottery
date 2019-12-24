@@ -317,14 +317,4 @@ def main():
     print('以上で配属プログラムを終了します')
 
 if __name__ == '__main__':
-    command = sys.argv[1] if len(sys.argv) > 1 else '0'
-    if command == '1':
-        LD.load_dic()
-        i = input('is_six_course ?\n>> ')
-        if i == '1':
-            ol = LD.get_open_labs('1')
-        else:
-            ol = LD.get_open_labs('0')
-        print(ol)
-    else:
         main()
