@@ -8,50 +8,75 @@
 from StudentData import StudentData
 from Labdata import LabData
 
-INPUT = 'html/template.html'
-OUTPUT = 'html/generated.html'
-
 SD = StudentData()
 LD = LabData()
 
-
-item_top = '<div class="item"><table><tr><th>番号</th><th>名前</th><th>志望状況</th></tr>'
-item_bottom = '</table></div>'
-def set_item_middle(id,name,state):
-    return '<tr><td class="id">{}</td><td class="name">{}</td><td class="state">{}</td></tr>'.format(id,name,state)
-
 def generate_html():
-
     SD.load_dic()
     LD.load_dic()
+    generate_student_data()
+    generate_lab_data()
 
-    with open(INPUT,'r',encoding='utf-8') as f:
+def generate_student_data():
+
+    with open('html/student_data_temp.html','r',encoding='utf-8') as f:
         lines = f.readlines()
     lines = [i for i in lines]
 
-    with open(OUTPUT,'w',encoding='utf-8') as f:
+    def generate_item(id):
+        t =  '<div class="item"><div class="name">'
+        t += '{} : {}'.format(int(id)+1,SD.dic[id]['name'])
+        t += '</div><div class="state">'
+
+        if SD.dic[id]['state'] in ['0','1','7','8']:
+            state = SD.states[SD.dic[id]['state']]
+        elif SD.dic[id]['state'] == '2':
+            state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (仮)'
+        elif SD.dic[id]['state'] == '3':
+            state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (本)'
+        else:
+            return ''
+
+        t += state + '</div></div>'
+        return t
+
+    with open('html/student_data.html','w',encoding='utf-8') as f:
         for i in lines:
             if '{{grid}}' in i:
-                n = 1
                 i = ''
                 for id in SD.dic:
-                    if n == 1:
-                        i += item_top
-                    name = SD.dic[id]['name']
-                    if SD.dic[id]['state'] in ['0','1','7','8']:
-                        state = SD.states[SD.dic[id]['state']]
-                    elif SD.dic[id]['state'] == '2':
-                        state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (仮)'
-                    elif SD.dic[id]['state'] == '3':
-                        state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (本)'
-                    else:
-                        n += 1
-                        continue
-                    name_id = int(id)+1
-                    i += set_item_middle(str(name_id),name,state)
-                    if n == len(SD.dic):
-                        i += item_bottom
-                    elif name_id % 10 == 0:
-                        i += item_bottom + item_top
-                    n += 1
+                    i += generate_item(id)
             f.writelines(i)
+
+def generate_lab_data():
+
+    with open('html/lab_data_temp.html','r',encoding='utf-8') as f:
+        lines = f.readlines()
+    lines = [i for i in lines]
+
+    def generate_container_top(lab,capacity):
+        t =  '<div class="lab_container"><div class="lab_head"><span class="lab_name">'
+        t += LD.dic[lab]['name']
+        t += '</span><span class="lab_capacity">'
+        t += 'min = {}, max = {}'.format(LD.dic[lab]['min'], capacity)
+        t += '</span></div>'
+        return t
+
+    with open('html/lab_data.html','w',encoding='utf-8') as f:
+        for l in lines:
+            if '{{container}}' in l:
+                l = ''
+                for lab in LD.dic:
+                    capacity = LD.dic[lab]['four_year'] + LD.dic[lab]['six_year'] + LD.dic[lab]['both']
+                    l += generate_container_top(lab,capacity)
+                    l += '<div class="grid">'
+                    enrollee = []
+                    for i in range(len(LD.dic[lab]['enrollee'])):
+                        enrollee.extend(LD.dic[lab]['enrollee'][i])
+                    for i in range(capacity):
+                        if i < len(enrollee):
+                            l += '<div class="names">{}</div>'.format(SD.dic[enrollee[i]]['name'])
+                        else:
+                            l += '<div class="names"> </div>'
+                    l += '</div></div>'
+            f.writelines(l)

@@ -60,7 +60,7 @@
     "dest_id": "2",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "2"
   },
   "7": {
     "student_num": "8",
@@ -141,7 +141,7 @@
     "dest_id": "4",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "17"
   },
   "16": {
     "student_num": "17",
@@ -186,7 +186,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "5"
+    "final_id": "1"
   },
   "21": {
     "student_num": "22",
@@ -222,7 +222,7 @@
     "dest_id": "5",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "0"
+    "final_id": "5"
   },
   "25": {
     "student_num": "26",
@@ -330,7 +330,7 @@
     "dest_id": "7",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "7"
+    "final_id": "17"
   },
   "37": {
     "student_num": "38",
@@ -402,7 +402,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "9"
+    "final_id": "0"
   },
   "45": {
     "student_num": "46",
@@ -411,7 +411,7 @@
     "dest_id": "9",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "1"
+    "final_id": "9"
   },
   "46": {
     "student_num": "47",
@@ -600,7 +600,7 @@
     "dest_id": "12",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "12"
   },
   "67": {
     "student_num": "68",
@@ -654,7 +654,7 @@
     "dest_id": "13",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "13"
+    "final_id": "0"
   },
   "73": {
     "student_num": "74",
@@ -690,7 +690,7 @@
     "dest_id": "14",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "17"
+    "final_id": "14"
   },
   "77": {
     "student_num": "78",
@@ -735,7 +735,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "15"
+    "final_id": "1"
   },
   "82": {
     "student_num": "83",
@@ -744,7 +744,7 @@
     "dest_id": "15",
     "is_six_course": "0",
     "state": "3",
-    "final_id": "21"
+    "final_id": "15"
   },
   "83": {
     "student_num": "84",

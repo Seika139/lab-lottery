@@ -1,0 +1,65 @@
+body {
+  color: #741f05;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 0.6em;
+  padding: 0.2em;
+  margin: 10px 10%;
+}
+
+.grid > .item {
+  font-size: 14pt;
+  text-align: center;
+  background-color: #fbad00;
+  overflow: auto;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.name {
+  text-align: left;
+  padding: 0 10% 3px;
+  font-size: 0.8em;
+}
+
+.state {
+  border-radius: 5px;
+  background: #fff;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+.btn {
+  border:  1px solid #741f05;
+  margin: 0 12% 20px auto;
+  border-radius: 5px;
+  background-color: #fbad00;
+  padding: 10px 15px;
+  text-align: center;
+  width: 200px;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: #741f05;
+}
+
+a:active {
+  color: #0235a6;
+}
