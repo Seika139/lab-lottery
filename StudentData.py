@@ -46,7 +46,7 @@ class StudentData:
     def create_dic(self):
         self.dic = {}
         # 実験用
-        df = pd.read_excel('excel/input/student_sample2.xlsx')
+        df = pd.read_excel('excel/input/student_data.xlsx')
         columns = ['student_num','name','destination','dest_id','is_six_course','state','final_id']
         for r in range(len(df)):
             self.dic[str(r)] = {}

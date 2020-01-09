@@ -302,19 +302,34 @@ def free_movement():
         else:
             print('不正な入力です')
 
-def main():
-    create_data()
-    first_lottery()
-    free_movement()
-    vagabond_lottery()
-    absentees_to_lack_lab()
-    lack_labs = check_lack_labs()
-    if len(lack_labs) == 1:
-        victims_to_one_lab(SD.get_provisionals(),lack_labs[0][0],lack_labs[0][1])
-    elif len(lack_labs) > 1:
-        victims_to_several_labs()
-    save_data()
-    print('以上で配属プログラムを終了します')
+def main(argv):
+    if len(argv) > 2:
+        print('input a correct args')
+    elif len(argv) == 1:
+        text = 'input some arguments\n'
+        text += '-e : execute the whole program\n'
+        text += '-i : initialize the data\n'
+        print(text)
+    else:
+        argv = argv[1]
+        if argv == '-i':
+            print('抽選データを初期化します')
+            create_data()
+        elif argv == '-e':
+            print('抽選システムを実行します')
+            first_lottery()
+            free_movement()
+            vagabond_lottery()
+            absentees_to_lack_lab()
+            lack_labs = check_lack_labs()
+            if len(lack_labs) == 1:
+                victims_to_one_lab(SD.get_provisionals(),lack_labs[0][0],lack_labs[0][1])
+            elif len(lack_labs) > 1:
+                victims_to_several_labs()
+            save_data()
+            print('以上で配属プログラムを終了します')
+        else:
+            print('input a correct args')
 
 if __name__ == '__main__':
-        main()
+    main(sys.argv)

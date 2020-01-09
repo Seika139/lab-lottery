@@ -14,7 +14,7 @@ h1 {
 
 #background {
   background: #ffeaaa;
-  margin: 0px 10px;
+  margin: 0 5%;
   padding: 30px 0px;
 }
 
@@ -23,7 +23,7 @@ h1 {
   background: #fbad00;
   padding: 0.1em;
   border-radius: 7px;
-  margin: 10px 10%;
+  margin: 10px 5%;
 }
 
 .lab_head {
