@@ -302,11 +302,34 @@ def free_movement():
         else:
             print('不正な入力です')
 
+def collect_survey():
+    """
+    アンケートの結果を実際の志望先としてdicに登録する
+    """
+    with open(os.path.join(MAIN_DIR,'survey','first_survey.txt')) as f:
+        array = f.readlines()
+    box = [i.replace('\n','').split('\t') for i in array]
+    box = [[int(i[0]),SD.dic[str(int(i[0])-1)]['name'],i[1],LD.get_id_from_name(i[1])] for i in box]
+    box.sort()
+    box2 = []
+    i = 1
+    while box:
+        if box[0][0] == i:
+            box2.append([str(i) for i in box[0]])
+            del box[0]
+        else:
+            box2.append([SD.dic[str(i-1)]['student_num'],SD.dic[str(i-1)]['name'],'なし','999'])
+        i += 1
+    box2 = [f'{i[0]}\t{i[1]}\t{i[2]}\t{i[3]}' for i in box2]
+    copy = '\n'.join(box2)
+    pyperclip.copy(copy)
+
 def main(argv):
     if len(argv) > 2:
         print('input a correct args')
     elif len(argv) == 1:
         text = 'input some arguments\n'
+        text += '-c : collect_survey\n'
         text += '-e : execute the whole program\n'
         text += '-i : initialize the data\n'
         print(text)
@@ -315,12 +338,18 @@ def main(argv):
         if argv == '-i':
             print('抽選データを初期化します')
             create_data()
+        elif argv == '-c':
+            print('第一希望のアンケートを集計します')
+            collect_survey()
         elif argv == '-e':
             print('抽選システムを実行します')
+            create_data()
             first_lottery()
             free_movement()
+            # TODO : 浪人の移動のフェーズの改善
             vagabond_lottery()
             absentees_to_lack_lab()
+            # TODO : アンケート結果の取得
             lack_labs = check_lack_labs()
             if len(lack_labs) == 1:
                 victims_to_one_lab(SD.get_provisionals(),lack_labs[0][0],lack_labs[0][1])

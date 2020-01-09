@@ -47,6 +47,15 @@ class LabData:
             self.dic[str(r)]['enrollee'] =  [[],[],[]]
         self.save_dic()
 
+    def get_id_from_name(self, name):
+        reverse_dic = {}
+        for key in self.dic:
+            reverse_dic[self.dic[key]['name']] = key
+        if name in reverse_dic:
+            return reverse_dic[name]
+        else:
+            return None
+
     def int_to_str(self,n):
         if type(n) == int:
             return str(n)
