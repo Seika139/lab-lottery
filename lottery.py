@@ -10,6 +10,7 @@ import csv
 import json
 import numpy as np
 import os
+import pyperclip
 import sys
 
 from StudentData import StudentData
@@ -238,8 +239,8 @@ def victims_to_several_labs():
     max_lab = 0
     min_lab = 100
     for key in que_dic:
-        min_lab = min(min_lab,len(que_dic[key]))
-        max_lab = max(max_lab,len(que_dic[key]))
+        min_lab = min(min_lab,len(que_dic[key])/LD.get_lacking_num_by_id(key))
+        max_lab = max(max_lab,len(que_dic[key])/LD.get_lacking_num_by_id(key))
     if max_lab / min_lab > 2:
         print('希望の研究室に2倍以上の差があります。全体で統合して抽選を行います')
         provisionals = SD.get_provisionals()
@@ -306,7 +307,9 @@ def collect_survey():
     """
     アンケートの結果を実際の志望先としてdicに登録する
     """
-    with open(os.path.join(MAIN_DIR,'survey','first_survey.txt')) as f:
+    SD.load_dic()
+    LD.load_dic()
+    with open(os.path.join('survey','first_survey.txt')) as f:
         array = f.readlines()
     box = [i.replace('\n','').split('\t') for i in array]
     box = [[int(i[0]),SD.dic[str(int(i[0])-1)]['name'],i[1],LD.get_id_from_name(i[1])] for i in box]
@@ -331,7 +334,7 @@ def main(argv):
         text = 'input some arguments\n'
         text += '-c : collect_survey\n'
         text += '-e : execute the whole program\n'
-        text += '-i : initialize the data\n'
+        text += '-i : initialize the data'
         print(text)
     else:
         argv = argv[1]

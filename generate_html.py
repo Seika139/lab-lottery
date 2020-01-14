@@ -28,8 +28,10 @@ def generate_student_data():
         t += '{} : {}'.format(int(id)+1,SD.dic[id]['name'])
         t += '</div><div class="state">'
 
-        if SD.dic[id]['state'] in ['0','1','7','8']:
+        if SD.dic[id]['state'] in ['1','7','8']:
             state = SD.states[SD.dic[id]['state']]
+        elif SD.dic[id]['state'] == '0':
+            state = LD.dic[SD.dic[id]['dest_id']]['name'] + '(志望)'
         elif SD.dic[id]['state'] == '2':
             state = LD.dic[SD.dic[id]['final_id']]['name'] + ' (仮)'
         elif SD.dic[id]['state'] == '3':
