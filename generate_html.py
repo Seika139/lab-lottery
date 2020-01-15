@@ -24,7 +24,10 @@ def generate_student_data():
     lines = [i for i in lines]
 
     def generate_item(id):
-        t =  '<div class="item"><div class="name">'
+        if SD.dic[id]['state'] == '1':
+            t =  '<div class="item_red"><div class="name">'
+        else:
+            t =  '<div class="item"><div class="name">'
         t += '{} : {}'.format(int(id)+1,SD.dic[id]['name'])
         t += '</div><div class="state">'
 
@@ -56,6 +59,12 @@ def generate_lab_data():
         lines = f.readlines()
     lines = [i for i in lines]
 
+    def genarate_vagabond_head():
+        t = '<div class="lab_container_red"><div class="lab_head"><span class="lab_name">'
+        t += '浪人'
+        t += '</span></div>'
+        return t
+
     def generate_container_top(lab,capacity):
         t =  '<div class="lab_container"><div class="lab_head"><span class="lab_name">'
         t += LD.dic[lab]['name']
@@ -68,6 +77,13 @@ def generate_lab_data():
         for l in lines:
             if '{{container}}' in l:
                 l = ''
+                vagabonds = SD.get_vagabonds()
+                if vagabonds:
+                    l += genarate_vagabond_head()
+                    l += '<div class="grid">'
+                    for id in vagabonds:
+                        l += '<div class="names">{}</div>'.format(SD.dic[id]['name'])
+                    l += '</div></div>'
                 for lab in LD.dic:
                     capacity = LD.dic[lab]['four_year'] + LD.dic[lab]['six_year'] + LD.dic[lab]['both']
                     l += generate_container_top(lab,capacity)

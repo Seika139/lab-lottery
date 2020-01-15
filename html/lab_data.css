@@ -26,6 +26,14 @@ h1 {
   margin: 10px 5%;
 }
 
+.lab_container_red {
+  text-align: center;
+  background: #741f05;
+  padding: 0.1em;
+  border-radius: 7px;
+  margin: 10px 5%;
+}
+
 .lab_head {
   margin: 10px auto 0;
   display: flex;
