@@ -5,7 +5,7 @@
     "destination": "天然物合成化学",
     "dest_id": "0",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "0"
   },
   "1": {
@@ -14,7 +14,7 @@
     "destination": "分子薬物動態学",
     "dest_id": "15",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "15"
   },
   "2": {
@@ -23,7 +23,7 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "1"
   },
   "3": {
@@ -32,7 +32,7 @@
     "destination": "細胞情報学",
     "dest_id": "12",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "12"
   },
   "4": {
@@ -41,7 +41,7 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "3"
   },
   "5": {
@@ -50,7 +50,7 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "3"
   },
   "6": {
@@ -59,7 +59,7 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "17"
   },
   "7": {
@@ -68,7 +68,7 @@
     "destination": "細胞情報学",
     "dest_id": "12",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "12"
   },
   "8": {
@@ -77,7 +77,7 @@
     "destination": "細胞情報学",
     "dest_id": "12",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "12"
   },
   "9": {
@@ -86,7 +86,7 @@
     "destination": "分子生物学",
     "dest_id": "10",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "10"
   },
   "10": {
@@ -95,7 +95,7 @@
     "destination": "分子薬物動態学",
     "dest_id": "15",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "15"
   },
   "11": {
@@ -104,7 +104,7 @@
     "destination": "育薬学",
     "dest_id": "20",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "20"
   },
   "12": {
@@ -113,7 +113,7 @@
     "destination": "蛋白質代謝学",
     "dest_id": "13",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "13"
   },
   "13": {
@@ -122,7 +122,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "4"
   },
   "14": {
@@ -131,7 +131,7 @@
     "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "9"
   },
   "15": {
@@ -140,7 +140,7 @@
     "destination": "遺伝学",
     "dest_id": "11",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "11"
   },
   "16": {
@@ -149,7 +149,7 @@
     "destination": "分子薬物動態学",
     "dest_id": "15",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "15"
   },
   "17": {
@@ -158,7 +158,7 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "1"
   },
   "18": {
@@ -167,7 +167,7 @@
     "destination": "衛生化学",
     "dest_id": "8",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "8"
   },
   "19": {
@@ -176,7 +176,7 @@
     "destination": "遺伝学",
     "dest_id": "11",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "11"
   },
   "20": {
@@ -185,7 +185,7 @@
     "destination": "蛋白質代謝学",
     "dest_id": "13",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "13"
   },
   "21": {
@@ -194,7 +194,7 @@
     "destination": "遺伝学",
     "dest_id": "11",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "11"
   },
   "22": {
@@ -203,7 +203,7 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "3"
   },
   "23": {
@@ -212,8 +212,8 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "0",
-    "state": "1",
-    "final_id": "0"
+    "state": "3",
+    "final_id": "7"
   },
   "24": {
     "student_num": "25",
@@ -221,7 +221,7 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "17"
   },
   "25": {
@@ -230,7 +230,7 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "1"
   },
   "26": {
@@ -239,7 +239,7 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "3"
   },
   "27": {
@@ -248,7 +248,7 @@
     "destination": "生体分析化学",
     "dest_id": "5",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "5"
   },
   "28": {
@@ -257,7 +257,7 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "1"
   },
   "29": {
@@ -266,7 +266,7 @@
     "destination": "蛋白質代謝学",
     "dest_id": "13",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "13"
   },
   "30": {
@@ -275,7 +275,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "4"
   },
   "31": {
@@ -293,7 +293,7 @@
     "destination": "蛋白質代謝学",
     "dest_id": "13",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "13"
   },
   "33": {
@@ -302,7 +302,7 @@
     "destination": "医学部附属病院薬剤部",
     "dest_id": "21",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "21"
   },
   "34": {
@@ -311,7 +311,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "4"
   },
   "35": {
@@ -320,7 +320,7 @@
     "destination": "医学部附属病院薬剤部",
     "dest_id": "21",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "21"
   },
   "36": {
@@ -329,7 +329,7 @@
     "destination": "生体分析化学",
     "dest_id": "5",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "5"
   },
   "37": {
@@ -338,7 +338,7 @@
     "destination": "天然物合成化学",
     "dest_id": "0",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "0"
   },
   "38": {
@@ -347,7 +347,7 @@
     "destination": "生体分析化学",
     "dest_id": "5",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "5"
   },
   "39": {
@@ -356,7 +356,7 @@
     "destination": "天然物化学",
     "dest_id": "2",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "2"
   },
   "40": {
@@ -365,7 +365,7 @@
     "destination": "分子生物学",
     "dest_id": "10",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "10"
   },
   "41": {
@@ -374,8 +374,8 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "1",
-    "final_id": "0"
+    "state": "3",
+    "final_id": "2"
   },
   "42": {
     "student_num": "43",
@@ -383,7 +383,7 @@
     "destination": "生体分析化学",
     "dest_id": "5",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "5"
   },
   "43": {
@@ -392,7 +392,7 @@
     "destination": "薬品作用学",
     "dest_id": "16",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "16"
   },
   "44": {
@@ -401,7 +401,7 @@
     "destination": "医学部附属病院薬剤部",
     "dest_id": "21",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "21"
   },
   "45": {
@@ -410,7 +410,7 @@
     "destination": "薬品作用学",
     "dest_id": "16",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "16"
   },
   "46": {
@@ -419,7 +419,7 @@
     "destination": "免疫・微生物学",
     "dest_id": "14",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "14"
   },
   "47": {
@@ -428,7 +428,7 @@
     "destination": "天然物合成化学",
     "dest_id": "0",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "0"
   },
   "48": {
@@ -437,7 +437,7 @@
     "destination": "薬品作用学",
     "dest_id": "16",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "16"
   },
   "49": {
@@ -446,7 +446,7 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "1"
   },
   "50": {
@@ -455,7 +455,7 @@
     "destination": "天然物合成化学",
     "dest_id": "0",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "0"
   },
   "51": {
@@ -464,7 +464,7 @@
     "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "9"
   },
   "52": {
@@ -473,7 +473,7 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "17"
   },
   "53": {
@@ -482,7 +482,7 @@
     "destination": "細胞情報学",
     "dest_id": "12",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "12"
   },
   "54": {
@@ -491,7 +491,7 @@
     "destination": "分子薬物動態学",
     "dest_id": "15",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "15"
   },
   "55": {
@@ -500,7 +500,7 @@
     "destination": "分子生物学",
     "dest_id": "10",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "10"
   },
   "56": {
@@ -509,7 +509,7 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "17"
   },
   "57": {
@@ -518,7 +518,7 @@
     "destination": "天然物合成化学",
     "dest_id": "0",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "0"
   },
   "58": {
@@ -527,7 +527,7 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "17"
   },
   "59": {
@@ -536,7 +536,7 @@
     "destination": "医学部附属病院薬剤部",
     "dest_id": "21",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "21"
   },
   "60": {
@@ -545,7 +545,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "4"
   },
   "61": {
@@ -554,7 +554,7 @@
     "destination": "有機合成化学",
     "dest_id": "1",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "1"
   },
   "62": {
@@ -563,7 +563,7 @@
     "destination": "細胞情報学",
     "dest_id": "12",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "12"
   },
   "63": {
@@ -581,8 +581,8 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "0",
-    "state": "1",
-    "final_id": "0"
+    "state": "3",
+    "final_id": "7"
   },
   "65": {
     "student_num": "66",
@@ -590,7 +590,7 @@
     "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "9"
   },
   "66": {
@@ -599,7 +599,7 @@
     "destination": "機能病態学",
     "dest_id": "17",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "17"
   },
   "67": {
@@ -608,7 +608,7 @@
     "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "9"
   },
   "68": {
@@ -617,7 +617,7 @@
     "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "1",
-    "state": "2",
+    "state": "3",
     "final_id": "9"
   },
   "69": {
@@ -626,7 +626,7 @@
     "destination": "分子薬物動態学",
     "dest_id": "15",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "15"
   },
   "70": {
@@ -635,7 +635,7 @@
     "destination": "分子生物学",
     "dest_id": "10",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "10"
   },
   "71": {
@@ -644,7 +644,7 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "3"
   },
   "72": {
@@ -653,7 +653,7 @@
     "destination": "生理化学",
     "dest_id": "9",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "9"
   },
   "73": {
@@ -662,7 +662,7 @@
     "destination": "薬品作用学",
     "dest_id": "16",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "16"
   },
   "74": {
@@ -671,7 +671,7 @@
     "destination": "蛋白質代謝学",
     "dest_id": "13",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "13"
   },
   "75": {
@@ -680,7 +680,7 @@
     "destination": "生体分析化学",
     "dest_id": "5",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "5"
   },
   "76": {
@@ -689,7 +689,7 @@
     "destination": "遺伝学",
     "dest_id": "11",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "11"
   },
   "77": {
@@ -707,7 +707,7 @@
     "destination": "衛生化学",
     "dest_id": "8",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "8"
   },
   "79": {
@@ -716,7 +716,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "4"
   },
   "80": {
@@ -725,7 +725,7 @@
     "destination": "生体分析化学",
     "dest_id": "5",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "5"
   },
   "81": {
@@ -734,7 +734,7 @@
     "destination": "免疫・微生物学",
     "dest_id": "14",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "14"
   },
   "82": {
@@ -743,7 +743,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "4"
   },
   "83": {
@@ -752,7 +752,7 @@
     "destination": "分子生物学",
     "dest_id": "10",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "10"
   },
   "84": {
@@ -761,7 +761,7 @@
     "destination": "免疫・微生物学",
     "dest_id": "14",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "14"
   },
   "85": {
@@ -770,7 +770,7 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "18"
   },
   "86": {
@@ -779,7 +779,7 @@
     "destination": "薬品作用学",
     "dest_id": "16",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "16"
   },
   "87": {
@@ -788,7 +788,7 @@
     "destination": "育薬学",
     "dest_id": "20",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "20"
   },
   "88": {
@@ -797,8 +797,8 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "1",
-    "final_id": "0"
+    "state": "3",
+    "final_id": "18"
   },
   "89": {
     "student_num": "90",
@@ -806,7 +806,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "2",
+    "state": "3",
     "final_id": "11"
   }
 }
