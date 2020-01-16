@@ -770,8 +770,8 @@
     "destination": "基礎有機化学",
     "dest_id": "3",
     "is_six_course": "0",
-    "state": "1",
-    "final_id": "0"
+    "state": "2",
+    "final_id": "18"
   },
   "86": {
     "student_num": "87",
@@ -806,7 +806,7 @@
     "destination": "薬品代謝化学",
     "dest_id": "4",
     "is_six_course": "0",
-    "state": "1",
-    "final_id": "0"
+    "state": "2",
+    "final_id": "11"
   }
 }
